@@ -1,13 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Merriweather&display=swap');
 
+/* housekeeping updated for navigation styles */
+/* CSS variables */
+
+:root {
+    --background-color: rgba(240, 235, 224, .85);
+    --text-color: #281E1A;
+    --header-color: #A39A87;
+  }
+
+/* housekeeping - set default attributes */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body { 
     padding: 0; 
     margin: 0;
+    background-color: var(--background-color);
     font-family: 'Merriweather', serif;
+    color: var(--text-color);
 }
-
 
 h1, h2 {
     font-family: 'Eczar', serif;
     letter-spacing: 1px;
 }
+
+/* navigation styles from Kevin Powell video */
