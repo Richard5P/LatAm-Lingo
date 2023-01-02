@@ -7,23 +7,26 @@
     --background-color: rgba(240, 235, 224, .85);
     --text-color: #281E1A;
     --header-color: #A39A87;
-  }
+}
 
 /* housekeeping - set default attributes */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-body { 
-    padding: 0; 
+body {
+    padding: 0;
     margin: 0;
     background-color: var(--background-color);
     font-family: 'Merriweather', serif;
     color: var(--text-color);
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Eczar', serif;
     letter-spacing: 1px;
 }
@@ -35,19 +38,24 @@ header {
     color: var(--text-color);
     text-align: center;
     position: fixed;
-    z-index: 999;       /* make sure the header is always in front */
+    z-index: 999;
+    /* make sure the header is always in front */
     width: 100%;
 }
 
-.logo {                 /* this is going to determine the height of the navbar so it's size matters */
+.logo {
+    /* this is going to determine the height of the navbar so it's size matters */
     margin: 0;
 }
 
 nav {
-    position:absolute; /* this is relative to it's parent header element */
-    top:100%;          /* the navigation elements will drop just below the header */
+    position: absolute;
+    /* this is relative to it's parent header element */
+    top: 100%;
+    /* the navigation elements will drop just below the header */
     text-align: left;
-    left:0;  /* hugs the left of the viewport */
+    left: 0;
+    /* hugs the left of the viewport */
     background: var(--header-color);
     width: 100%;
     display: none;
@@ -59,15 +67,16 @@ nav ul {
     list-style: none;
 }
 
-nav li {    /* this gives some spacing around the menu items */
+nav li {
+    /* this gives some spacing around the menu items */
     margin-bottom: .5em;
     margin-left: .5em;
 }
 
 nav a {
-    color: var(--text-color);   
+    color: var(--text-color);
     text-decoration: none;
-    font-size: .9rem; 
+    font-size: .9rem;
     text-transform: uppercase;
 }
 
@@ -80,18 +89,20 @@ nav a:hover {
     position: absolute;
     top: -9999px;
     left: -9999px;
-  }
+}
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
     display: block;
 }
 
 .nav-toggle-label {
-    position:absolute;
-    top:  0;
+    position: absolute;
+    top: 0;
     left: 0;
-    margin-left: .5em; /* align with nav li */
-    height:100%;  /* 100% of header, for vertical center with flex */
+    margin-left: .5em;
+    /* align with nav li */
+    height: 100%;
+    /* 100% of header, for vertical center with flex */
     display: flex;
     align-items: center;
 }
@@ -101,26 +112,34 @@ nav a:hover {
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-    width: 2em;     /* size of bars */
+    width: 2em;
+    /* size of bars */
     height: 2px;
-    display:block;
-    background: white; /* bar color */
-    border-radius: 2px;  /* creates the "bar" shape */
-    position: relative; /* for each span, relative to the header parent */
+    display: block;
+    background: white;
+    /* bar color */
+    border-radius: 2px;
+    /* creates the "bar" shape */
+    position: relative;
+    /* for each span, relative to the header parent */
 }
 
 /* copy for the top and bottom bars */
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-    content: ''; /* before and after pseudo classes need a content value to display */
+    content: '';
+    /* before and after pseudo classes need a content value to display */
 }
 
 /* position before and after to be above and below span  */
-.nav-toggle-label span::before { /* this is the top bar */
+.nav-toggle-label span::before {
+    /* this is the top bar */
     bottom: 7px;
 }
-.nav-toggle-label span::after { /* this is the bottom bar */
-    top: 6px; 
+
+.nav-toggle-label span::after {
+    /* this is the bottom bar */
+    top: 6px;
 }
 
 
@@ -130,31 +149,53 @@ nav a:hover {
 
 /* responsive styling for full size display from Kevin Powell video */
 
-@media screen and (min-width: 1008px) {   /* apply to displays 1008px and larger */
+@media screen and (min-width: 1008px) {
+    /* apply to displays 1008px and larger */
 
-/* reset only styling property attributes that need to change from small display */
+    /* reset only styling property attributes that need to change from small display */
 
-    .nav-toggle-label {     /* hide the burger bars */
-        display:none;
-    } 
-    
-    header {                /* change the header from block to grid and style the grid */
+    .nav-toggle-label {
+        /* hide the burger bars */
+        display: none;
+    }
+
+    header {
+        /* change the header from block to grid and style the grid */
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-      }
+    }
+
+
+    .logo {
+        grid-column: 2 / 3;
+        /* position logo in grid column 2 */
+    }
 
     nav {
-        all:unset;          /* clear nav style attributes */
-        
-        grid-columns: 3/4;  /* navigation ul is now in grid column 3 instead of former page position */
-        display: flex;      /* navigation ul inside the grid is now a flex container - flex instide a grid */ 
+        all: unset;
+        /* clear nav style attributes */
+
+        grid-columns: 3/4;
+        /* navigation ul is now in grid column 3 instead of former page position */
+        display: flex;
+        /* navigation ul inside the grid is now a flex container - flex instide a grid */
         justify-content: flex-end;
         align-items: center;
     }
-      
-    .logo {
-        grid-column: 2 / 3;
+
+/* style the nav elements (i.e. the menu) */
+
+    nav ul {
+        display: flex;
     }
 
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
 
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
 }
