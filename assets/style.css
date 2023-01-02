@@ -28,7 +28,7 @@ h1, h2 {
     letter-spacing: 1px;
 }
 
-/* header navigation styles from Kevin Powell video */
+/* header navigation styles for small/mobile display from Kevin Powell video */
 
 header {
     background: var(--header-color);
@@ -121,4 +121,40 @@ nav a:hover {
 }
 .nav-toggle-label span::after { /* this is the bottom bar */
     top: 6px; 
+}
+
+
+
+
+
+
+/* responsive styling for full size display from Kevin Powell video */
+
+@media screen and (min-width: 1008px) {   /* apply to displays 1008px and larger */
+
+/* reset only styling property attributes that need to change from small display */
+
+    .nav-toggle-label {     /* hide the burger bars */
+        display:none;
+    } 
+    
+    header {                /* change the header from block to grid and style the grid */
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+      }
+
+    nav {
+        all:unset;          /* clear nav style attributes */
+        
+        grid-columns: 3/4;  /* navigation ul is now in grid column 3 instead of former page position */
+        display: flex;      /* navigation ul inside the grid is now a flex container - flex instide a grid */ 
+        justify-content: flex-end;
+        align-items: center;
+    }
+      
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+
 }
