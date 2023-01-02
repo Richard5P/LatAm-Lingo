@@ -142,8 +142,19 @@ nav a:hover {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
       }
+
+    nav {
+        all:unset;          /* clear nav style attributes */
+        
+        grid-columns: 3/4;  /* navigation ul is now in grid column 3 instead of former page position */
+        display: flex;      /* navigation ul inside the grid is now a flex container - flex instide a grid */ 
+        justify-content: flex-end;
+        align-items: center;
+    }
       
-      .logo {
+    .logo {
         grid-column: 2 / 3;
-      }
+    }
+
+
 }
