@@ -9,6 +9,7 @@
     --header-color: #A39A87;
 }
 
+
 /* housekeeping - set default attributes */
 
 *,
@@ -43,9 +44,14 @@ header {
     width: 100%;
 }
 
-.logo {
+.logo-text {
     /* this is going to determine the height of the navbar so it's size matters */
     margin: 0;
+}
+
+.logo-image {
+    display: flex;
+    justify-self: start;
 }
 
 nav {
@@ -163,6 +169,7 @@ nav a:hover {
         /* change the header from block to grid and style the grid */
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        justify-self: start;
     }
 
 
@@ -175,7 +182,7 @@ nav a:hover {
         all: unset;
         /* clear nav style attributes */
 
-        grid-columns: 3/4;
+        grid-column: 3/4;
         /* navigation ul is now in grid column 3 instead of former page position */
         display: flex;
         /* navigation ul inside the grid is now a flex container - flex instide a grid */
