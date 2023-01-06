@@ -9,6 +9,7 @@
     --header-color: #A39A87;
 }
 
+
 /* housekeeping - set default attributes */
 
 *,
@@ -50,7 +51,7 @@ header {
 
 .logo-image {
     display: flex;
-    justify-self: center;
+    justify-self: start;
 }
 
 nav {
@@ -168,6 +169,7 @@ nav a:hover {
         /* change the header from block to grid and style the grid */
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        justify-self: start;
     }
 
 
