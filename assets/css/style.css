@@ -43,9 +43,14 @@ header {
     width: 100%;
 }
 
-.logo {
+.logo-text {
     /* this is going to determine the height of the navbar so it's size matters */
     margin: 0;
+}
+
+.logo-image {
+    display: flex;
+    justify-self: center;
 }
 
 nav {
@@ -175,7 +180,7 @@ nav a:hover {
         all: unset;
         /* clear nav style attributes */
 
-        grid-columns: 3/4;
+        grid-column: 3/4;
         /* navigation ul is now in grid column 3 instead of former page position */
         display: flex;
         /* navigation ul inside the grid is now a flex container - flex instide a grid */
