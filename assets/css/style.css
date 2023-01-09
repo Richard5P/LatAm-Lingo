@@ -42,6 +42,7 @@ header {
     z-index: 999;
     /* make sure the header is always in front */
     width: 100%;
+    height: max-content;
 }
 
 .logo-text {
@@ -148,6 +149,49 @@ nav a:hover {
     top: 6px;
 }
 
+/* footer styling */
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px 5px 2px 5px;
+    margin-top: 5px 0 2px 0;
+    background-color: aqua;
+}
+
+#ftr-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+/*    display: block;
+    text-align: center; */
+    display:flex;
+    justify-content: center;
+}
+
+.social-networks {
+    text-align:center
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding: 0 1rem 0 1rem;
+    color: var(--text-color); 
+}
+
+#copyright {
+    display:flex;
+    justify-content: center;
+    font-size: x-small;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
@@ -205,4 +249,12 @@ nav a:hover {
         opacity: 1;
         position: relative;
     }
+}
+
+/*   main   */
+
+#main-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content 100vh;
 }
