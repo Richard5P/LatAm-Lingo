@@ -148,6 +148,18 @@ nav a:hover {
     top: 6px;
 }
 
+/* footer styling */
+
+#ftr-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftr-social-media-items {
+    text-align: center;
+}
+
 
 
 
