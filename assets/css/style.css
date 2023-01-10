@@ -263,6 +263,11 @@ footer {
 
 /* Main section */
 
+#main-container {
+    top;
+}
+
+
 #hero {
     background-image: url("../images/placeimg_640_480_people.jpg");
     background-color: var(--background-color);
