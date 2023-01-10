@@ -18,12 +18,13 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     padding: 0;
     margin: 0;
     background-color: var(--background-color);
     font-family: 'Merriweather', serif;
     color: var(--text-color);
+    position: relative;
 }
 
 h1,
@@ -38,11 +39,15 @@ header {
     background: var(--header-color);
     color: var(--text-color);
     text-align: center;
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 ;
+    padding: 0;
     z-index: 999;
     /* make sure the header is always in front */
     width: 100%;
-    height: max-content;
+    height: auto;
 }
 
 .logo-text {
@@ -151,19 +156,20 @@ nav a:hover {
 
 /* footer styling */
 footer {
-    position: sticky;
+    position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: auto;
-    padding: 10px 5px 2px 5px;
-    margin-top: 5px 0 2px 0;
+    padding: 0;
+    margin: 0;
     background-color: aqua;
 }
 
 #ftr-container{
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 1em 0 0 0;
 /*    display: block;
     text-align: center; */
     display:flex;
@@ -175,7 +181,7 @@ footer {
 }
 
 .social-networks > li {
-    display: inline;
+    display: inline-block;
 }
 
 .social-networks i {
@@ -253,8 +259,50 @@ footer {
 
 /*   main   */
 
+/* Grid option for main
 #main-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content 100vh;
+}
+*/
+
+/* Main section */
+
+/* #main-container {
+    position:absolute;
+    top: 0;
+;
+} */
+
+
+#hero {
+    background-image: url("../images/istockphoto-1404780685-1024x1024.jpg");
+    background-color: var(--background-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#hero > h1 {
+    text-align: center;
+    background-color: transparent;
+}
+
+.about-progams {
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#culture-table th {
+    display: none;
+}
+
+#culture-table tr {
+    padding: 20px;
 }
