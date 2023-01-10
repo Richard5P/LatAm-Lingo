@@ -292,3 +292,17 @@ footer {
     text-align: center;
     background-color: transparent;
 }
+
+.about-progams {
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#culture-table th {
+    display: none;
+}
+
+#culture-table tr {
+    padding: 20px;
+}
