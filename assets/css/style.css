@@ -175,7 +175,7 @@ footer {
 }
 
 .social-networks > li {
-    display: inline;
+    display: inline-block;
 }
 
 .social-networks i {
@@ -253,8 +253,28 @@ footer {
 
 /*   main   */
 
+/* Grid option for main
 #main-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content 100vh;
+}
+*/
+
+/* Main section */
+
+#hero {
+    background-image: url("../images/placeimg_640_480_people.jpg");
+    background-color: var(--background-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#hero > h1 {
+    text-align: center;
+    background-color: transparent;
 }
