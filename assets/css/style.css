@@ -41,8 +41,9 @@ header {
     position: fixed;
     z-index: 999;
     /* make sure the header is always in front */
+    top: 0;
     width: 100%;
-    height: max-content;
+    height: auto;
 }
 
 .logo-text {
@@ -264,7 +265,7 @@ footer {
 /* Main section */
 
 #main-container {
-    top;
+    top: 0;
 }
 
 
