@@ -24,6 +24,7 @@ body {
     background-color: var(--background-color);
     font-family: 'Merriweather', serif;
     color: var(--text-color);
+    position: relative;
 }
 
 h1,
@@ -38,7 +39,7 @@ header {
     background: var(--header-color);
     color: var(--text-color);
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
@@ -153,7 +154,7 @@ nav a:hover {
 
 /* footer styling */
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -272,10 +273,11 @@ footer {
 
 
 #hero {
-    background-image: url("../images/placeimg_640_480_people.jpg");
+    background-image: url("../images/istockphoto-1404780685-1024x1024.jpg");
     background-color: var(--background-color);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
     padding: 0;
     margin: 0;
     width: 100vw;
