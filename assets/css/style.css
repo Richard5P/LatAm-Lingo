@@ -39,9 +39,10 @@ header {
     color: var(--text-color);
     text-align: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
     /* make sure the header is always in front */
-    top: 0;
     width: 100%;
     height: auto;
 }
@@ -152,12 +153,13 @@ nav a:hover {
 
 /* footer styling */
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     height: auto;
     padding: 10px 5px 2px 5px;
-    margin-top: 5px 0 2px 0;
+    margin: 5px 0 2px 0;
     background-color: aqua;
 }
 
