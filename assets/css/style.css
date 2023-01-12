@@ -6,7 +6,7 @@
 :root {
     --background-color: rgba(240, 235, 224, .85);
     --text-color: #281E1A;
-    --header-color: #A39A87;
+    --header-color: #281E1A;
 }
 
 * {
@@ -23,5 +23,12 @@ body {
 
 h1,h2,h3 {
     font-family: 'Eczar', serif;
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--header-color)
+}
+
+#logo
+{
+    float:left;
 }
