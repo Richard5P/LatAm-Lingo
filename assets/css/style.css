@@ -34,11 +34,19 @@ h1,h2,h3 {
     font-size: 125%;
 }
 
+#logo a{
+    text-decoration: none;
+}
+
 #menu
 {
     font-size: 110%;
     letter-spacing: .05rem;
     float:right
+}
+
+#menu, #logo {
+    line-height: 4rem;
 }
 
 
@@ -50,4 +58,5 @@ h1,h2,h3 {
 
 #menu a {
     text-decoration: none;
+    color:inherit;  
 }
