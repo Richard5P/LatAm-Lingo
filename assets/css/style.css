@@ -8,3 +8,9 @@
     --text-color: #281E1A;
     --header-color: #A39A87;
 }
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Merriweather', serif;
+    color: var(--text-color);
+}
