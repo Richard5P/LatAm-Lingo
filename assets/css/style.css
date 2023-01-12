@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Merriweather&display=swap');
+
+/* housekeeping updated for navigation styles */
+/* CSS variables */
+
+:root {
+    --background-color: rgba(240, 235, 224, .85);
+    --text-color: #281E1A;
+    --header-color: #A39A87;
+}
