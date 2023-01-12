@@ -2,7 +2,7 @@
 
 /* housekeeping updated for navigation styles */
 /* CSS variables */
-
+ 
 :root {
     --background-color: rgba(240, 235, 224, .85);
     --text-color: #281E1A;
@@ -27,8 +27,7 @@ html, body {
     position: relative;
 }
 
-h1,
-h2 {
+h1,h2,h3 {
     font-family: 'Eczar', serif;
     letter-spacing: 1px;
 }
