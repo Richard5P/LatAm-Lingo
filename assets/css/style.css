@@ -9,8 +9,19 @@
     --header-color: #A39A87;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body {
     background-color: var(--background-color);
     font-family: 'Merriweather', serif;
     color: var(--text-color);
+}
+
+h1,h2,h3 {
+    font-family: 'Eczar', serif;
+    letter-spacing: 1px;
 }
