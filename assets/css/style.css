@@ -23,12 +23,13 @@ body {
 
 h1,h2,h3 {
     font-family: 'Eczar', serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .25rem;
+    font-weight: bolder;
     color: var(--header-color)
 }
 
 #logo
 {
     float:left;
+    font-size: 125%;
 }
