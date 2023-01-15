@@ -2,7 +2,7 @@
 
 /* housekeeping updated for navigation styles */
 /* CSS variables */
- 
+
 :root {
     --background-color: rgba(240, 235, 224, .85);
     --text-color: #281E1A;
@@ -18,7 +18,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     width: 100vw;
     margin: 0;
@@ -30,7 +31,9 @@ html, body {
     position: relative;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: 'Eczar', serif;
     letter-spacing: 1px;
 }
@@ -38,86 +41,102 @@ h1,h2,h3 {
 #hdr {
     height: 7.5vh;
     width: 100vw;
-    background-color: yellow; 
-    position:fixed;
+    background-color: yellow;
+    position: fixed;
     top: 0;
     left: 0;
     line-height: 7.5vh;
     text-align: center;
-  }
-  
-  #main {
-    margin-top:7.5vh;
+}
+
+
+section {
+    height: 600px;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Eczar', serif;
+    letter-spacing: .2rem;
+    font-weight: bolder;
+    color: var(--header-color);
+}
+
+#main {
+    margin-top: 7.5vh;
     min-height: 80vh;
     width: 100vw;
-    margin:0;
-  }
-  
-  #sect {
-    height: auto;
+    margin: 0;
+}
+
+#sect {
+    min-height: 600px;
     width: 100vw;
-    background-color:orange;
-  }
-  
-  #ftr {
-    height: 7.5vh;
-    width: 100vw;
-    background-color: pink;
-    position:fixed;
-    bottom:0;
-    left: 0;
-  }
-  
-  .about-programs {
+    background-color: orange;
+}
+
+
+.about-programs {
     padding: 1rem;
     font-size: 125%
-  }
-  
-  .about-programs > h1{
+}
+
+.about-programs>h1 {
     text-align: center;
     margin-top: 1rem;
-  }
-  
-  #hero-image {
-      width: 100%;
-      height: 80vh;
-      padding-top: 50rem;
-      background-image: url("../images/hero.jpg");
-      background-clip: border-box;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      overflow: hidden;
-  }
-/* header navigation styles for small/mobile display from Kevin Powell video */
-
-/*
-header {
-    background: var(--header-color);
-    color: var(--text-color);
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0 ;
-    padding: 0;
-    z-index: 999;
-
- make sure the header is always in front 
-    width: 100%;
-    height: 10vh;
 }
-*/
-#hdr {
-    height: 10vh;
-    width: 100vw;
-    background-color: yellow; 
-    position:fixed;
-    top: 0;
-    left: 0;
-    text-align: center;
-  }
+/*
+#hero-image {
+    width: 100%;
+    height: 80vh;
+    padding-top: 50rem;
+    background-image: url("../images/hero.jpg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+} */
 
+/* hero image */
+
+#hero-container {
+    overflow: hidden;
+}
+
+#hero {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/hero.jpg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero>h1 {
+    text-align: center;
+    background-color: transparent;
+}
+
+.about-progams {
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#culture-table th {
+    display: none;
+}
+
+#culture-table tr {
+    padding: 20px;
+}
+
+
+
+/* header navigation styles for small/mobile display from Kevin Powell video */
 
 nav {
     position: absolute;
@@ -159,7 +178,7 @@ nav a:hover {
     display: block;
     position: absolute;
     top: -9999px;
-    left: -9999px;
+    left: -9999px; 
 }
 
 .nav-toggle:checked~nav {
@@ -187,7 +206,7 @@ nav a:hover {
     /* size of bars */
     height: 2px;
     display: block;
-    background: white;
+    background: black;
     /* bar color */
     border-radius: 2px;
     /* creates the "bar" shape */
@@ -214,7 +233,7 @@ nav a:hover {
 }
 
 /* footer styling */
-footer {
+/*footer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -224,46 +243,32 @@ footer {
     margin: 0;
     background-color: aqua;
 }
-
-section {
-    height: 600px;
-    width: 100%; 
-}
-
-h1,h2,h3 {
-    font-family: 'Eczar', serif;
-    letter-spacing: .2rem;
-    font-weight: bolder;
-    color: var(--header-color);
-}
-
-#ftr-container{
-    height: 50px;
+*/
+#ftr {
+    height: 7.5vh;
     width: 100vw;
     background-color: pink;
-    position:sticky;
-    top: 100%;
+    position: fixed;
+    bottom: 0;
     left: 0;
-    display: block;
-    text-align: center;
 }
 
 .social-networks {
-    text-align:center
+    text-align: center
 }
 
-.social-networks > li {
+.social-networks>li {
     display: inline-block;
 }
 
 .social-networks i {
     font-size: 160%;
     padding: 0 1rem 0 1rem;
-    color: var(--text-color); 
+    color: var(--text-color);
 }
 
 #copyright {
-    display:flex;
+    display: flex;
     justify-content: center;
     font-size: x-small;
     margin: 0;
@@ -312,7 +317,7 @@ h1,h2,h3 {
         align-items: center;
     }
 
-/* style the nav elements (i.e. the menu) */
+    /* style the nav elements (i.e. the menu) */
 
     nav ul {
         display: flex;
@@ -346,38 +351,3 @@ h1,h2,h3 {
     top: 0;
 ;
 } */
-
-
-/* hero image */
-
-#hero-container {
-overflow: hidden;
-}
-
-#hero {
-    width: 100%;
-    height: 600px;
-    background-image: url("../images/hero.jpg");
-    background-clip: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#hero > h1 {
-    text-align: center;
-    background-color: transparent;
-}
-
-.about-progams {
-    padding: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-#culture-table th {
-    display: none;
-}
-
-#culture-table tr {
-    padding: 20px;
-}
