@@ -49,6 +49,13 @@ h3 {
     text-align: center;
 }
 
+#hdr h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 section {
     min-height: 600px;
