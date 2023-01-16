@@ -158,7 +158,7 @@ nav {
     /* hugs the left of the viewport */
     background: var(--header-color);
     width: 100%;
-    display: none;
+    display: block;
 }
 
 nav ul {
@@ -169,14 +169,14 @@ nav ul {
 
 nav li {
     /* this gives some spacing around the menu items */
-    margin-bottom: .5em;
+    height: 1.2em;
+    margin-bottom: .05em;
     margin-left: .5em;
 }
 
 nav a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: .9rem;
     text-transform: uppercase;
 }
 
