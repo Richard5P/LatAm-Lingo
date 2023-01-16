@@ -38,6 +38,10 @@ h3 {
     letter-spacing: 1px;
 }
 
+header{
+    display: grid;
+}
+
 #hdr {
     height: 4rem;
     width: 100vw;
@@ -85,6 +89,7 @@ main {
     min-height: 80vh;
     width: 100vw;
     margin: 0;
+    display: block;
 }
 
 /*
@@ -105,13 +110,11 @@ main {
 
 
 #hero-image {
-    width: 100%;
-    height: 80vh;
     padding-top: 80rem;
-    background-image: url("../images/hero.jpg");
+    background-image: url(../images/hero.jpg);
     background-clip: border-box;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     overflow: hidden;
 }
@@ -124,7 +127,7 @@ main {
 
 .about-programs {
     padding: 1rem;
-    font-size: 125%;
+ /*   font-size: 125%;  for desktop */
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -287,69 +290,6 @@ nav a:hover {
 
 
 
-/* responsive styling for full size display from Kevin Powell video */
-
-@media screen and (min-width: 1008px) {
-    /* apply to displays 1008px and larger */
-
-    /* reset only styling property attributes that need to change from small display */
-
-    .nav-toggle-label {
-        /* hide the burger bars */
-        display: none;
-    }
-
-    header {
-        /* change the header from block to grid and style the grid */
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-        justify-self: start;
-    }
-
-
-    .logo {
-        grid-column: 2 / 3;
-        /* position logo in grid column 2 */
-    }
-
-    nav {
-        all: unset;
-        /* clear nav style attributes */
-
-        grid-column: 3/4;
-        /* navigation ul is now in grid column 3 instead of former page position */
-        display: flex;
-        /* navigation ul inside the grid is now a flex container - flex instide a grid */
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    /* style the nav elements (i.e. the menu) */
-
-    nav ul {
-        display: flex;
-    }
-
-    nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
-    }
-
-    nav a {
-        opacity: 1;
-        position: relative;
-    }
-}
-
-/*   main   */
-
-/* Grid option for main
-#main-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: min-content 100vh;
-}
-*/
 
 /* Main section */
 
