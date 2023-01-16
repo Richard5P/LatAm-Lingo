@@ -179,6 +179,10 @@ footer {
     text-align:center
 }
 
+ul>social-networks
+{
+    padding-inline-start:0;
+}
 .social-networks > li {
     display: inline-block;
 }
