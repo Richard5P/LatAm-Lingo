@@ -60,6 +60,10 @@ header h1 {
     padding-bottom: 0;
 }
 
+header>div>a {
+    text-decoration: none;
+}
+
 
 section {
     min-height: 600px;
@@ -115,18 +119,24 @@ main {
     overflow: hidden;
 } */
 
+/* hero container */
+#hero-container
+{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
 /* hero image */
 
-
-
 #hero-image {
-    padding-top: 80rem;
+    height: 600px;
+    width: 100%;
     background-image: url(../images/hero.jpg);
     background-clip: border-box;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
-    overflow: hidden;
 }
 
 #hero>h1 {
