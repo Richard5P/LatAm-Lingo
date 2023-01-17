@@ -96,10 +96,10 @@ nav a:hover {
 }
 
 .nav-toggle {
-    display: none;
-    position: absolute;
+    display: block;
+/*    position: absolute;
     top: -9999px;
-    left: -9999px;
+    left: -9999px; */
 }
 
 .nav-toggle:checked~nav {
@@ -179,6 +179,10 @@ footer {
     text-align:center
 }
 
+ul>social-networks
+{
+    padding-inline-start:0;
+}
 .social-networks > li {
     display: inline-block;
 }
