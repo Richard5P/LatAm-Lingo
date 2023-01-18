@@ -70,7 +70,7 @@
             <div class="about-programs" aria-label="Laguage Programs">
                 <h2>Language Programs</h2>
                 <p>
-                    Our language programs cover the two most widely spoken indigenous languages today; Mapuche and
+                    Our language programs cover the two most widely spoken indigenous languages today; Mapudungun and
                     Quechua. For students interested in proficiency accreditation, we have structured our courses
                     conform to the CEFR and ACTFL Common Reference Levels for homogeneity and certification (if
                     necessary). Currently, we offer courses covering language proficiency levels A1-B2.[article]
@@ -114,7 +114,7 @@
                 <!--              Course schedule, listing, and Sign Up -->
                 <div id="reg-info">
                     <form method="post " action="https://formdump.codeinstitute.net/">
-                        <h1>Registration Infomation</h1>
+                        <h2>Registration Infomation</h2>
                         <div>
                             <labelfor="reg-rqr">Required</labelfor>
                                 <fieldset id="reg-rqr">
@@ -133,7 +133,7 @@
                             <input type="checkbox" id="mlist" name="db_mlist">
                             <label for="mlist">Sign me up to your mailing list</label>
                         </div>
-                        <h2>Optional</h2>
+                        <h3>Optional</h3>
                         <div>
                             <div>
                                 <label for="age">Age:</label>
@@ -141,10 +141,10 @@
                                 <label for="nation">Nationality:</label>
                                 <select id="nation" name="db_nation">
                                     <option value="">
-                                    <optgroup label="Indigenous"></optgroup>
-                                        <option value="QU">Quecho</option>
-                                        <option value="AY">Aymara</option>
-                                        <option value="MA">Mayan</option>
+                                        <optgroup label="Indigenous"></optgroup>
+                                    <option value="QU">Quecho</option>
+                                    <option value="AY">Aymara</option>
+                                    <option value="MA">Mayan</option>
                                     </option>
                                     <optgroup label="Colonial">
                                         <option value="AR">Argentina</option>
@@ -157,7 +157,50 @@
                                     </optgroup>
                                 </select>
                             </div>
+                        </div>
+                        <h2>Program Selection</h2>
+                        <div>
+                            <div>
+                                <h3>Group Classes</h3>
+                                <div>
+                                    <table id="group_classes">
+                                        <caption>Group Class Selections</caption>
+                                        <tr>
+                                            <th>Select Checkbox</th>
+                                            <th>Program</th>
+                                            <th>Start Month</th>
+                                            <th>AM / PM</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="cb-class-sel">
+                                            </td>
+                                            <td>
+                                                <select id="class-subject" name="db_subject" >
+                                                    <optgroup label="Languages">
+                                                        <option value="MAA1-2">Mapudungun A1-2</option>
+                                                        <option value="MAB1-2">Mapudungun B1-2</option>
+                                                        <option value="QUA1-2">Quechua A1-2</option>
+                                                        <option value="QUB1-2">Quechua B1-2</option>
+                                                    </optgroup>
+                                                    <optgroup label="Cultural">
+                                                        <option value="CU-1">Culture 1</option>
+                                                        <option value="CU-2">Culture 2</option>
+                                                        <option value="CU-3">Culture 3</option>
+                                                        <option value="CU-4">Culture 4</option>
+                                                    </optgroup>
+                                                </select>
+                                                <td>
+                                                    <input type="month" id="start-month" name="db_month" min(2023-01) max(2024-01)>
+                                                </td>
+                                            </td>
 
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+                            </div>
                         </div>
                     </form>
             </section>
