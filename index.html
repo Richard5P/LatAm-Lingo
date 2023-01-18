@@ -133,12 +133,31 @@
                             <input type="checkbox" id="mlist" name="db_mlist">
                             <label for="mlist">Sign me up to your mailing list</label>
                         </div>
+                        <h2>Optional</h2>
                         <div>
-                            <h2>Optional</h2>
-                            <label for="age">Age:</label>
-                            <input type="number" min="16" max="99">
-                            <label for="nation">Nationality:</label>
-                            <input type="" text" id="nation" name="db_nation">
+                            <div>
+                                <label for="age">Age:</label>
+                                <input type="number" min="16" max="99">
+                                <label for="nation">Nationality:</label>
+                                <select id="nation" name="db_nation">
+                                    <option value="">
+                                    <optgroup label="Indigenous"></optgroup>
+                                        <option value="QU">Quecho</option>
+                                        <option value="AY">Aymara</option>
+                                        <option value="MA">Mayan</option>
+                                    </option>
+                                    <optgroup label="Colonial">
+                                        <option value="AR">Argentina</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="CH">Chile</option>
+                                        <option value="CO">Columbia</option>
+                                        <option value="EQ">Equador</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="OT">Other</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
                         </div>
                     </form>
             </section>
