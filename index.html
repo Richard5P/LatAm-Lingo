@@ -108,7 +108,6 @@
                     </tr>
                 </table>
             </div>
-            </div>
 
             <section class="page-even" id="sign-up">
                 <!--              Course schedule, listing, and Sign Up -->
@@ -174,11 +173,12 @@
                                         <!-- Note: the number of rows are fixed -->
                                         <tr>
                                             <td>
-                                                <input type="checkbox" id="cb-class-sel">
+                                                <input type="checkbox" id="cb-class-sel-1">
                                             </td>
                                             <td>
                                                 <!-- Note: following fields should be required if the checkbox is checked-->
-                                                <select id="class-subject" name="db_subject">
+                                                <!-- id and name should use an array instead of unique values-->
+                                                <select id="class-subject-1" name="db_subject-1">
                                                     <optgroup label="Languages">
                                                         <option value="MAA1-2">Mapudungun A1-2</option>
                                                         <option value="MAB1-2">Mapudungun B1-2</option>
@@ -193,11 +193,11 @@
                                                     </optgroup>
                                                 </select>
                                             <td>
-                                                <input type="month" id="start-month" name="db_month" min(2023-01)
+                                                <input type="month" id="start-month-1" name="db_month-1" min(2023-01)
                                                     max(2024-01)>
                                             </td>
                                             <td>
-                                                <select id="am-pm" name="db_time">
+                                                <select id="am-pm-1" name="db_time-1">
                                                     <option selected>am</option>
                                                     <option>pm</option>
                                                 </select>
@@ -206,11 +206,11 @@
 
                                         <tr>
                                             <td>
-                                                <input type="checkbox" id="cb-class-sel">
+                                                <input type="checkbox" id="cb-class-sel-2">
                                             </td>
                                             <td>
                                                 <!-- Note: following fields should be required if the checkbox is checked-->
-                                                <select id="class-subject" name="db_subject">
+                                                <select id="class-subject-2" name="db_subject-2">
                                                     <optgroup label="Languages">
                                                         <option value="MAA1-2">Mapudungun A1-2</option>
                                                         <option value="MAB1-2">Mapudungun B1-2</option>
@@ -225,11 +225,11 @@
                                                     </optgroup>
                                                 </select>
                                             <td>
-                                                <input type="month" id="start-month" name="db_month" min(2023-01)
+                                                <input type="month" id="start-month-2" name="db_month-2" min(2023-01)
                                                     max(2024-01)>
                                             </td>
                                             <td>
-                                                <select id="am-pm" name="db_time">
+                                                <select id="am-pm-2" name="db_time-2">
                                                     <option selected>am</option>
                                                     <option>pm</option>
                                                 </select>
@@ -242,14 +242,31 @@
                                     <div id="indi_class">
                                         <p>Please request your preferred date, time and number of hours. We will contact
                                             you to confirm or arrange an alternative.</p>
-
-                                        <labelfor="class-req">Class request</labelfor>
-                                            <fieldset id="class-req" </div>
+                                        <fieldset id="class-req">
+                                            <legend>Class request</legend>
+                                            <fieldset id="ic-language">
+                                                <legend>Language</legend>
+                                                <labelfor id="icl-ma">Mapudungun</labelfor>
+                                                <input type="radio" id="icl-ma" name="db-iclanguage" value="ma">
+                                                <labelfor id="icl-qu">Quechua</labelfor>
+                                                <input type="radio" id="icl-qu" name="db-iclanguage" value="qu">
+                                            </fieldset>
+                                            <div>
+                                                Date and time:
+                                                <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
+                                                    max="2024-12-20" aria-label="Requested Date">
+                                                <input type="time" id="icl-time" name="db-icltime" min="08:30:0"
+                                                    max="16:00:00" aria-label="Requested Time">
+                                            </div>
+                                        </fieldset>
                                     </div>
                                 </div>
+                            </div>
+                            <br>
+                            <input type="submit" value="Register Me">
                     </form>
+                </div>
             </section>
-
     </main>
 
     <footer>
