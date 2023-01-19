@@ -116,26 +116,26 @@
                     <form method="post " action="https://formdump.codeinstitute.net/">
                         <h2>Registration Infomation</h2>
                         <div>
-                            <labelfor="reg-rqr">Required</labelfor>
-                                <fieldset id="reg-rqr">
-                                    <label for="fname">First Name: </label>
-                                    <input type="text" id="fname" name="db_fname" required>
-                                    <br>
-                                    <label for="lname">Last Name: </label>
-                                    <input type="text" id="lname" name="db_lname" required>
-                                    <br>
-                                    <label for="email">eMail Address: </label>
-                                    <input type="email" id="email" name="db_email" required>
-                                    <br>
-                                </fieldset>
+                            <fieldset id="reg-rqr">
+                                <legend>Required</legend>
+                                <label for="fname">First Name: </label>
+                                <input type="text" id="fname" name="db_fname" required>
+                                <br>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" id="lname" name="db_lname" required>
+                                <br>
+                                <label for="email">eMail Address: </label>
+                                <input type="email" id="email" name="db_email" required>
+                                <br>
+                            </fieldset>
                         </div>
                         <div>
                             <input type="checkbox" id="mlist" name="db_mlist">
                             <label for="mlist">Sign me up to your mailing list</label>
                         </div>
-                        <h3>Optional</h3>
                         <div>
-                            <div>
+                            <fieldset id="reg-opt">
+                                <legend>Optional</legend>
                                 <label for="age">Age:</label>
                                 <input type="number" min="16" max="99">
                                 <label for="nation">Nationality:</label>
@@ -156,14 +156,14 @@
                                         <option value="OT">Other</option>
                                     </optgroup>
                                 </select>
-                            </div>
+                            </fieldset>
                         </div>
                         <h2>Program Selection</h2>
                         <div>
                             <div>
                                 <h3>Group Classes</h3>
-                                <div>
-                                    <table id="group_classes">
+                                <div id="group_classes">
+                                    <table>
                                         <caption>Group Class Selections</caption>
                                         <tr>
                                             <th>Select Checkbox</th>
@@ -237,9 +237,16 @@
                                         </tr>
                                     </table>
                                 </div>
+                                <div>
+                                    <h3>Individual Class</h3>
+                                    <div id="indi_class">
+                                        <p>Please request your preferred date, time and number of hours. We will contact
+                                            you to confirm or arrange an alternative.</p>
 
-                            </div>
-                        </div>
+                                        <labelfor="class-req">Class request</labelfor>
+                                            <fieldset id="class-req" </div>
+                                    </div>
+                                </div>
                     </form>
             </section>
 
