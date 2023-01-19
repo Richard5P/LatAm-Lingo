@@ -171,12 +171,14 @@
                                             <th>Start Month</th>
                                             <th>AM / PM</th>
                                         </tr>
+                                        <!-- Note: the number of rows are fixed -->
                                         <tr>
                                             <td>
                                                 <input type="checkbox" id="cb-class-sel">
                                             </td>
                                             <td>
-                                                <select id="class-subject" name="db_subject" >
+                                                <!-- Note: following fields should be required if the checkbox is checked-->
+                                                <select id="class-subject" name="db_subject">
                                                     <optgroup label="Languages">
                                                         <option value="MAA1-2">Mapudungun A1-2</option>
                                                         <option value="MAB1-2">Mapudungun B1-2</option>
@@ -190,13 +192,49 @@
                                                         <option value="CU-4">Culture 4</option>
                                                     </optgroup>
                                                 </select>
-                                                <td>
-                                                    <input type="month" id="start-month" name="db_month" min(2023-01) max(2024-01)>
-                                                </td>
+                                            <td>
+                                                <input type="month" id="start-month" name="db_month" min(2023-01)
+                                                    max(2024-01)>
                                             </td>
-
+                                            <td>
+                                                <select id="am-pm" name="db_time">
+                                                    <option selected>am</option>
+                                                    <option>pm</option>
+                                                </select>
+                                            </td>
                                         </tr>
 
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="cb-class-sel">
+                                            </td>
+                                            <td>
+                                                <!-- Note: following fields should be required if the checkbox is checked-->
+                                                <select id="class-subject" name="db_subject">
+                                                    <optgroup label="Languages">
+                                                        <option value="MAA1-2">Mapudungun A1-2</option>
+                                                        <option value="MAB1-2">Mapudungun B1-2</option>
+                                                        <option value="QUA1-2">Quechua A1-2</option>
+                                                        <option value="QUB1-2">Quechua B1-2</option>
+                                                    </optgroup>
+                                                    <optgroup label="Cultural">
+                                                        <option value="CU-1">Culture 1</option>
+                                                        <option value="CU-2">Culture 2</option>
+                                                        <option value="CU-3">Culture 3</option>
+                                                        <option value="CU-4">Culture 4</option>
+                                                    </optgroup>
+                                                </select>
+                                            <td>
+                                                <input type="month" id="start-month" name="db_month" min(2023-01)
+                                                    max(2024-01)>
+                                            </td>
+                                            <td>
+                                                <select id="am-pm" name="db_time">
+                                                    <option selected>am</option>
+                                                    <option>pm</option>
+                                                </select>
+                                            </td>
+                                        </tr>
                                     </table>
                                 </div>
 
