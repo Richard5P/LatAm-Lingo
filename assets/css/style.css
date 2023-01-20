@@ -9,6 +9,8 @@
     --hdr-ftr-color:#C6E6F5;
     --page-even-back-color: #F5CFEB;
     --page-odd-back-color:#D9FEDF;
+    --text-even-color: #1b1842;
+    --text-odd-color: #1b1842;
 }
 
 
@@ -109,6 +111,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: var(--page-odd-back-color);
+    color: var()
 }
 
 #hero>h1 {
