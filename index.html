@@ -142,25 +142,24 @@
                             <fieldset id="reg-opt">
                                 <legend>Optional</legend>
                                 <label for="age">Age:</label>
-                                <input type="number" min="16" max="99">
+                                <input id="age" type="number" min="16" max="99">
                                 <label for="nation">Nationality:</label>
                                 <select id="nation" name="db_nation">
                                     <option value="" selected disabled hidden>Select an Option</option>
-                                        <optgroup label="Indigenous">
-                                            <option value="QU">Quecho</option>
-                                            <option value="AY">Aymara</option>
-                                            <option value="MA">Mayan</option>
-                                        </optgroup>
-
-                                        <optgroup label="Colonial">
-                                            <option value="AR">Argentina</option>
-                                            <option value="BR">Brazil</option>
-                                            <option value="CH">Chile</option>
-                                            <option value="CO">Columbia</option>
-                                            <option value="EQ">Equador</option>
-                                            <option value="VE">Venezuela</option>
-                                            <option value="OT">Other</option>
-                                        </optgroup>
+                                    <optgroup label="Indigenous">
+                                        <option value="QU">Quecho</option>
+                                        <option value="AY">Aymara</option>
+                                        <option value="MA">Mayan</option>
+                                    </optgroup>
+                                    <optgroup label="Colonial">
+                                        <option value="AR">Argentina</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="CH">Chile</option>
+                                        <option value="CO">Columbia</option>
+                                        <option value="EQ">Equador</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="OT">Other</option>
+                                    </optgroup>
                                 </select>
                             </fieldset>
                         </div>
@@ -251,18 +250,17 @@
                                             you to confirm or arrange an alternative.</p>
                                         <fieldset id="class-req">
                                             <legend>Class request</legend>
-                                                Language:
-                                                <labelfor id="icl-ma">Mapudungun</labelfor>
-                                                <input type="radio" id="icl-ma" name="db-iclanguage" value="ma">
-                                                <labelfor id="icl-qu">Quechua</labelfor>
-                                                <input type="radio" id="icl-qu" name="db-iclanguage" value="qu">
+                                            Language:
+                                            <label for="icl-ma">Mapudungun</label>
+                                            <input type="radio" id="icl-ma" name="db-iclanguage" value="ma">
+                                            <label for="icl-qu">Quechua</label>
+                                            <input type="radio" id="icl-qu" name="db-iclanguage" value="qu">
 
-                                                Date and time:
-                                                <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
-                                                    max="2024-12-20" aria-label="Requested Date">
-                                                <input type="time" id="icl-time" name="db-icltime" min="08:30:0"
-                                                    max="16:00:00" aria-label="Requested Time">
-                                    
+                                            Date and time:
+                                            <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
+                                                max="2024-12-20" aria-label="Requested Date">
+                                            <input type="time" id="icl-time" name="db-icltime" min="08:30:00"
+                                                max="16:00:00" aria-label="Requested Time">
                                         </fieldset>
                                     </div>
                                 </div>
