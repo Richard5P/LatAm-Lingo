@@ -42,7 +42,7 @@ header {
     height: 4rem;
     width: 100vw;
     background-color: var(--hdr-ftr-color);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     line-height: 4rem;
@@ -85,7 +85,7 @@ footer {
 }
 
 main {
-    margin-top: 4rem;
+    padding-top: 4rem;
     min-height: 80vh;
     width: 100vw;
     margin: 0;
