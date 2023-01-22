@@ -39,6 +39,12 @@ header {
     text-align: center;
 }
 
+section h1:first-child{
+    padding: 0;
+    margin: 0;
+    color:blue;
+}
+
 footer {
     height: 4rem;
     width: 100vw;
@@ -52,9 +58,7 @@ footer {
 .page {
     min-height: 600px;
     width: 100vw;
-    margin-left: 2rem;
-    padding-left: 1rem;
-    color: red;
+    margin: 0 2.5rem;
 }
 
 .page-even {
@@ -70,7 +74,6 @@ footer {
     padding: 0;
 }
 
-
 #hero {
     height: 600px;
     width: 100%;
@@ -83,9 +86,8 @@ footer {
     background-color: var(--page-odd-back-color);
 }
 
-#hero > h1 {
-    padding: 0;
-    margin: 0;
+#hero>h1 {
     text-align: center;
     background-color: transparent;
+    color: yellow;
 }
