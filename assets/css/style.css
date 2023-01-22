@@ -49,3 +49,33 @@ footer {
     left: 0;
     display: block;
 }
+
+.page {
+    min-height: 600px;
+    width: 100vw;
+}
+
+.page-even {
+    background-color: #30F5F0;
+}
+
+.page-odd {
+    background-color: #F5CFEB;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/hero.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-color: var(--page-odd-back-color);
+}
+
+#hero>h1 {
+    text-align: center;
+    background-color: transparent;
+}
