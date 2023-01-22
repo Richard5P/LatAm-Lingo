@@ -28,8 +28,6 @@ body {
     position: relative;
 }
 
-
-
 header {
     height: 4rem;
     width: 100vw;
@@ -54,7 +52,9 @@ footer {
 .page {
     min-height: 600px;
     width: 100vw;
-    padding: 2rem 1rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    color: red;
 }
 
 .page-even {
