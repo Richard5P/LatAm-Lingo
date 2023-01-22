@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatAm Lingo</title>
+    <meta name="description" content="Latin American Portuguese, Spanish and indiginous languages and cultures school">
+    <meta name="keywords" content="spanish, portuguese, latin america, school, language, indiginous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <h1>LatAm Lingo</h1>
+            </a>
+        </div>
+
+        <!-- hamburger toggle -->
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main id="main">
+        <section id="home">
+            <div id="hero-container">
+                <div id="hero-image">
+                    <div id="hero-text">
+                        <h1>Indigenous Languages School</h1>
+                        <p>Learn to speak like a native</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="about" class="page-odd">
+            <section class="about-programs">
+                <h2>The LatAm Lingo difference</h2>
+                <p>
+                    LatAm Lingo offers a holistic approach to education through complementary programs of indigenous
+                    languages and cultural awareness for practical communications across Latin America. To ensure that
+                    our material is correct and current, we work closely with several indigenous communities in course
+                    development and maintenance. We are pleased to, that to date, we have the approval of both the
+                    Mapuche in Chile and by Quechua communities in Bolivia and Peru.
+                </p>
+                <p>
+                    Each program is delivered in a set of 4 classes that are currently arranged to start on the first
+                    Monday of each calendar month.
+                </p>
+                <p>
+                    In addition to our listed programs, LatAm Lingo can create and deliver bespoke training programs for
+                    company employees or other organizations. For more information, please contact us at
+                    <a href="mailto:sales@LatAmLingo.co.cl">sales@LatAmLingo.co.cl</a></p>
+            </section>
+            <section class="about-programs">
+                <h2>Language Programs</h2>
+                <p>
+                    Our language programs cover the two most widely spoken indigenous languages today; Mapudungun and
+                    Quechua. For students interested in proficiency accreditation, we have structured our courses
+                    conform to the CEFR and ACTFL Common Reference Levels for homogeneity and certification (if
+                    necessary). Currently, we offer courses covering language proficiency levels A1-B2.[article]
+                </p>
+            </section>
+            <section class="about-programs">
+                <h2>Culture Programs</h2>
+                <p>
+                    Our cultural programs were developed in-house and are structured as follows:
+                </p>
+                <table id="culture-table" aria-label="Table of Culture Programs">
+                    <tr>
+                        <th>Program Title</th>
+                        <th>Program Description</th>
+                    </tr>
+                    <tr>
+                        <td>Introduction</td>
+                        <td>Historical introduction to pre-colonization SA cultures, tribes, and languages.</td>
+                    </tr>
+                    <tr>
+                        <td>Customs and Traditions</td>
+                        <td>Exploration of the history and current customs and traditions of the Mapuche and Quechua
+                            communities.</td>
+                    </tr>
+                    <tr>
+                        <td>Pre-Columbian Communities</td>
+                        <td>Exploration of other pre-Columbian indigenous communities such as Muisca, Tairona, and
+                            Quimbaya.</td>
+                    </tr>
+                    <tr>
+                        <td>Colonialism Impact: Invasion to today</td>
+                        <td>Exploration of the colonisation of Latin America, the timeline of events leading to the
+                            present day, discussion of the current situation for indigenous communities across Latin
+                            America.</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="page-even" id="sign-up">
+                <!--              Course schedule, listing, and Sign Up -->
+                <div id="reg-info">
+                    <form method="post" action="https://formdump.codeinstitute.net/">
+                        <h2>Registration Infomation</h2>
+                        <div>
+                            <fieldset id="reg-rqr">
+                                <legend>Required</legend>
+                                <label for="fname">First Name: </label>
+                                <input type="text" id="fname" name="db_fname" required>
+                                <br>
+                                <label for="lname">Last Name: </label>
+                                <input type="text" id="lname" name="db_lname" required>
+                                <br>
+                                <label for="email">eMail Address: </label>
+                                <input type="email" id="email" name="db_email" required>
+                                <br>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mlist" name="db_mlist">
+                            <label for="mlist">Sign me up to your mailing list</label>
+                        </div>
+                        <div>
+                            <fieldset id="reg-opt">
+                                <legend>Optional</legend>
+                                <label for="age">Age:</label>
+                                <input id="age" type="number" min="16" max="99">
+                                <label for="nation">Nationality:</label>
+                                <select id="nation" name="db_nation">
+                                    <option value="" selected disabled hidden>Select an Option</option>
+                                    <optgroup label="Indigenous">
+                                        <option value="QU">Quecho</option>
+                                        <option value="AY">Aymara</option>
+                                        <option value="MA">Mayan</option>
+                                    </optgroup>
+                                    <optgroup label="Colonial">
+                                        <option value="AR">Argentina</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="CH">Chile</option>
+                                        <option value="CO">Columbia</option>
+                                        <option value="EQ">Equador</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="OT">Other</option>
+                                    </optgroup>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <h2>Program Selection</h2>
+                        <div>
+                            <div>
+                                <h3>Group Classes</h3>
+                                <div id="group_classes">
+                                    <table>
+                                        <caption>Group Class Selections</caption>
+                                        <tr>
+                                            <th>Select Checkbox</th>
+                                            <th>Program</th>
+                                            <th>Start Month</th>
+                                            <th>AM / PM</th>
+                                        </tr>
+                                        <!-- Note: the number of rows are fixed -->
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="cb-class-sel-1">
+                                            </td>
+                                            <td>
+                                                <!-- Note: following fields should be required if the checkbox is checked-->
+                                                <!-- id and name should use an array instead of unique values-->
+                                                <select id="class-subject-1" name="db_subject-1">
+                                                    <optgroup label="Languages">
+                                                        <option value="MAA1-2">Mapudungun A1-2</option>
+                                                        <option value="MAB1-2">Mapudungun B1-2</option>
+                                                        <option value="QUA1-2">Quechua A1-2</option>
+                                                        <option value="QUB1-2">Quechua B1-2</option>
+                                                    </optgroup>
+                                                    <optgroup label="Cultural">
+                                                        <option value="CU-1">Culture 1</option>
+                                                        <option value="CU-2">Culture 2</option>
+                                                        <option value="CU-3">Culture 3</option>
+                                                        <option value="CU-4">Culture 4</option>
+                                                    </optgroup>
+                                                </select>
+                                            <td>
+                                                <input type="month" id="start-month-1" name="db_month-1" min="2023-01"
+                                                    max="2024-01">
+                                            </td>
+                                            <td>
+                                                <select id="am-pm-1" name="db_time-1">
+                                                    <option selected>am</option>
+                                                    <option>pm</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="cb-class-sel-2">
+                                            </td>
+                                            <td>
+                                                <!-- Note: following fields should be required if the checkbox is checked-->
+                                                <select id="class-subject-2" name="db_subject-2">
+                                                    <optgroup label="Languages">
+                                                        <option value="MAA1-2">Mapudungun A1-2</option>
+                                                        <option value="MAB1-2">Mapudungun B1-2</option>
+                                                        <option value="QUA1-2">Quechua A1-2</option>
+                                                        <option value="QUB1-2">Quechua B1-2</option>
+                                                    </optgroup>
+                                                    <optgroup label="Cultural">
+                                                        <option value="CU-1">Culture 1</option>
+                                                        <option value="CU-2">Culture 2</option>
+                                                        <option value="CU-3">Culture 3</option>
+                                                        <option value="CU-4">Culture 4</option>
+                                                    </optgroup>
+                                                </select>
+                                            <td>
+                                                <input type="month" id="start-month-2" name="db_month-2" min="2023-01"
+                                                    max="2024-01">
+                                            </td>
+                                            <td>
+                                                <select id="am-pm-2" name="db_time-2">
+                                                    <option selected>am</option>
+                                                    <option>pm</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div>
+                                    <h3>Individual Class</h3>
+                                    <div id="indi_class">
+                                        <p>Please request your preferred date, time and number of hours. We will contact
+                                            you to confirm or arrange an alternative.</p>
+                                        <fieldset id="class-req">
+                                            <legend>Class request</legend>
+                                            Language:
+                                            <label for="icl-ma">Mapudungun</label>
+                                            <input type="radio" id="icl-ma" name="db-iclanguage" value="ma">
+                                            <label for="icl-qu">Quechua</label>
+                                            <input type="radio" id="icl-qu" name="db-iclanguage" value="qu">
+
+                                            Date and time:
+                                            <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
+                                                max="2024-12-20" aria-label="Requested Date">
+                                            <input type="time" id="icl-time" name="db-icltime" min="08:30:00"
+                                                max="16:00:00" aria-label="Requested Time">
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <input type="submit" value="Register Me">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <ul class="social-networks">
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.twitch.tv" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-twitch"></i></a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p>Copyright © LatAm Lingo 2023</p>
+            </div>
+        </div>
+        <!-- font awesome script *       -->
+        <script src="https://kit.fontawesome.com/b471b308cb.js" crossorigin="anonymous"></script>
+    </footer>
+</body>
+
+</html>

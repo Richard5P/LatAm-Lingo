@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Merriweather&display=swap');
 
-/* housekeeping updated for navigation styles */
 /* CSS variables */
 
 :root {
-    --background-color: orange;
+    --background-color: rgb(51, 255, 0);
     --text-color: #1b1842;
     --hdr-ftr-color:#C6E6F5;
     --page-even-back-color: #F5CFEB;
@@ -29,15 +28,6 @@ body {
     position: relative;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Eczar', serif;
-    letter-spacing: 1px;
-}
-
-
-
 header {
     height: 4rem;
     width: 100vw;
@@ -47,23 +37,6 @@ header {
     left: 0;
     line-height: 4rem;
     text-align: center;
-}
-
-header h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-header>div>a {
-    text-decoration: none;
-}
-
-
-section {
-    min-height: 600px;
-    width: 100vw;
 }
 
 footer {
@@ -76,6 +49,14 @@ footer {
     display: block;
 }
 
+.page {
+    min-height: 600px;
+    width: 100vw;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    color: red;
+}
+
 .page-even {
     background-color: #30F5F0;
 }
@@ -84,26 +65,13 @@ footer {
     background-color: #F5CFEB;
 }
 
-main {
-    padding-top: 4rem;
-    min-height: 80vh;
-    width: 100vw;
+#home {
     margin: 0;
-    display: block;
+    padding: 0;
 }
 
 
-/* hero container */
-#hero-container
-{
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-}
-
-/* hero image */
-
-#hero-image {
+#hero {
     height: 600px;
     width: 100%;
     background-image: url(../images/hero.jpg);
@@ -111,169 +79,13 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     background-color: var(--page-odd-back-color);
-    color: var()
 }
 
-#hero>h1 {
+#hero > h1 {
+    padding: 0;
+    margin: 0;
     text-align: center;
     background-color: transparent;
 }
-
-
-.about-programs {
-    padding: 1rem;
- /*   font-size: 125%;  for desktop */
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.about-programs>h1 {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-
-#culture-table th {
-    display: none;
-}
-
-#culture-table tr {
-    padding: 1rem;
-}
-
-/* header navigation styles for small/mobile display from Kevin Powell video */
-
-nav {
-    position: absolute;
-    /* this is relative to it's parent header element */
-    top: 100%;
-    /* the navigation elements will drop just below the header */
-    text-align: left;
-    left: 0;
-    /* hugs the left of the viewport */
-    background: var(--header-color);
-    width: 100%;
-    display: none;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    /* this gives some spacing around the menu items */
-    height: 1.2em;
-    margin-bottom: .05em;
-    margin-left: .5em;
-}
-
-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav a:hover {
-    font-weight: bold;
-}
-
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: -9999px;
-    left: -9999px; 
-}
-
-.nav-toggle:checked~nav {
-    display: block;
-}
-
-.nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: .5em;
-    /* align with nav li */
-    height: 100%;
-    /* 100% of header, for vertical center with flex */
-    display: flex;
-    align-items: center;
-}
-
-/* hamburger toggle label for checkbox ; 3 spans = 3 bars*/
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    width: 2em;
-    /* size of bars */
-    height: 2px;
-    display: block;
-    background: black;
-    /* bar color */
-    border-radius: 2px;
-    /* creates the "bar" shape */
-    position: relative;
-    /* for each span, relative to the header parent */
-}
-
-/* copy for the top and bottom bars */
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    content: '';
-    /* before and after pseudo classes need a content value to display */
-}
-
-/* position before and after to be above and below span  */
-.nav-toggle-label span::before {
-    /* this is the top bar */
-    bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-    /* this is the bottom bar */
-    top: 6px;
-}
-
-/* footer social networks styling */
-
-.social-networks {
-    text-align: center;
-    margin: 0.5rem 0;
-    padding-inline-start: 0;
-}
-
-.social-networks>li {
-    display: inline-block;
-}
-
-.social-networks i {
-    font-size: 160%;
-    padding: 0 1rem 0 1rem;
-    color: var(--text-color);
-}
-
-#copyright {
-    display: flex;
-    justify-content: center;
-    font-size: x-small;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
-
-
-/* Main section */
-
-/* #main-container {
-    position:absolute;
-    top: 0;
-;
-} */
