@@ -51,18 +51,125 @@
                     <h2>Registration Information</h2>
 
                     <div id="reg-req">
-                        <!--Required fields-->
+                        <fieldset id="reg-req-fs">
+                            <legend>Required</legend>
+                            <label for="fname">First Name: </label>
+                            <input type="text" id="fname" name="db_fname" required>
+                            <br>
+                            <label for="lname">Last Name: </label>
+                            <input type="text" id="lname" name="db_lname" required>
+                            <br>
+                            <label for="email">eMail Address: </label>
+                            <input type="email" id="email" name="db_email" required>
+                            <br>
+                        </fieldset>
                     </div>
 
                     <div id="reg-opt">
-                        <!--optional fields-->
+                        <fieldset id="reg-opt-fs">
+                            <legend>Optional</legend>
+                            <label for="age">Age:</label>
+                            <input id="age" type="number" min="16" max="99">
+                            <label for="nation">Nationality:</label>
+                            <select id="nation" name="db_nation">
+                                <option value="" selected disabled hidden>Select an Option</option>
+                                <optgroup label="Indigenous">
+                                    <option value="QU">Quecho</option>
+                                    <option value="AY">Aymara</option>
+                                    <option value="MA">Mayan</option>
+                                </optgroup>
+                                <optgroup label="Colonial">
+                                    <option value="AR">Argentina</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="CH">Chile</option>
+                                    <option value="CO">Columbia</option>
+                                    <option value="EQ">Equador</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="OT">Other</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
                     </div>
                 </section>
 
                 <section id="reg-pgm">
                     <h2>Program Selection</h2>
                     <h3>Group Classes</h3>
-                    <!--table of classes-->
+                    <div id="group_classes">
+                        <table>
+                            <caption>Group Class Selections</caption>
+                            <tr>
+                                <th>Select Checkbox</th>
+                                <th>Program</th>
+                                <th>Start Month</th>
+                                <th>AM / PM</th>
+                            </tr>
+                            <!-- Note: the number of rows are fixed -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="cb-class-sel-1">
+                                </td>
+                                <td>
+                                    <!-- Note: following fields should be required if the checkbox is checked-->
+                                    <!-- id and name should use an array instead of unique values-->
+                                    <select id="class-subject-1" name="db_subject-1">
+                                        <optgroup label="Languages">
+                                            <option value="MAA1-2">Mapudungun A1-2</option>
+                                            <option value="MAB1-2">Mapudungun B1-2</option>
+                                            <option value="QUA1-2">Quechua A1-2</option>
+                                            <option value="QUB1-2">Quechua B1-2</option>
+                                        </optgroup>
+                                        <optgroup label="Cultural">
+                                            <option value="CU-1">Culture 1</option>
+                                            <option value="CU-2">Culture 2</option>
+                                            <option value="CU-3">Culture 3</option>
+                                            <option value="CU-4">Culture 4</option>
+                                        </optgroup>
+                                    </select>
+                                <td>
+                                    <input type="month" id="start-month-1" name="db_month-1" min="2023-01"
+                                        max="2024-01">
+                                </td>
+                                <td>
+                                    <select id="am-pm-1" name="db_time-1">
+                                        <option selected>am</option>
+                                        <option>pm</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="cb-class-sel-2">
+                                </td>
+                                <td>
+                                    <!-- Note: following fields should be required if the checkbox is checked-->
+                                    <select id="class-subject-2" name="db_subject-2">
+                                        <optgroup label="Languages">
+                                            <option value="MAA1-2">Mapudungun A1-2</option>
+                                            <option value="MAB1-2">Mapudungun B1-2</option>
+                                            <option value="QUA1-2">Quechua A1-2</option>
+                                            <option value="QUB1-2">Quechua B1-2</option>
+                                        </optgroup>
+                                        <optgroup label="Cultural">
+                                            <option value="CU-1">Culture 1</option>
+                                            <option value="CU-2">Culture 2</option>
+                                            <option value="CU-3">Culture 3</option>
+                                            <option value="CU-4">Culture 4</option>
+                                        </optgroup>
+                                    </select>
+                                <td>
+                                    <input type="month" id="start-month-2" name="db_month-2" min="2023-01"
+                                        max="2024-01">
+                                </td>
+                                <td>
+                                    <select id="am-pm-2" name="db_time-2">
+                                        <option selected>am</option>
+                                        <option>pm</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
                     <h3>Individual Class</h3>
                     <!--class selection fieldset-->
                 </section>
