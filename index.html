@@ -95,7 +95,81 @@
                 <section id="reg-pgm">
                     <h2>Program Selection</h2>
                     <h3>Group Classes</h3>
-                    <!--table of classes-->
+                    <div id="group_classes">
+                        <table>
+                            <caption>Group Class Selections</caption>
+                            <tr>
+                                <th>Select Checkbox</th>
+                                <th>Program</th>
+                                <th>Start Month</th>
+                                <th>AM / PM</th>
+                            </tr>
+                            <!-- Note: the number of rows are fixed -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="cb-class-sel-1">
+                                </td>
+                                <td>
+                                    <!-- Note: following fields should be required if the checkbox is checked-->
+                                    <!-- id and name should use an array instead of unique values-->
+                                    <select id="class-subject-1" name="db_subject-1">
+                                        <optgroup label="Languages">
+                                            <option value="MAA1-2">Mapudungun A1-2</option>
+                                            <option value="MAB1-2">Mapudungun B1-2</option>
+                                            <option value="QUA1-2">Quechua A1-2</option>
+                                            <option value="QUB1-2">Quechua B1-2</option>
+                                        </optgroup>
+                                        <optgroup label="Cultural">
+                                            <option value="CU-1">Culture 1</option>
+                                            <option value="CU-2">Culture 2</option>
+                                            <option value="CU-3">Culture 3</option>
+                                            <option value="CU-4">Culture 4</option>
+                                        </optgroup>
+                                    </select>
+                                <td>
+                                    <input type="month" id="start-month-1" name="db_month-1" min="2023-01"
+                                        max="2024-01">
+                                </td>
+                                <td>
+                                    <select id="am-pm-1" name="db_time-1">
+                                        <option selected>am</option>
+                                        <option>pm</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="cb-class-sel-2">
+                                </td>
+                                <td>
+                                    <!-- Note: following fields should be required if the checkbox is checked-->
+                                    <select id="class-subject-2" name="db_subject-2">
+                                        <optgroup label="Languages">
+                                            <option value="MAA1-2">Mapudungun A1-2</option>
+                                            <option value="MAB1-2">Mapudungun B1-2</option>
+                                            <option value="QUA1-2">Quechua A1-2</option>
+                                            <option value="QUB1-2">Quechua B1-2</option>
+                                        </optgroup>
+                                        <optgroup label="Cultural">
+                                            <option value="CU-1">Culture 1</option>
+                                            <option value="CU-2">Culture 2</option>
+                                            <option value="CU-3">Culture 3</option>
+                                            <option value="CU-4">Culture 4</option>
+                                        </optgroup>
+                                    </select>
+                                <td>
+                                    <input type="month" id="start-month-2" name="db_month-2" min="2023-01"
+                                        max="2024-01">
+                                </td>
+                                <td>
+                                    <select id="am-pm-2" name="db_time-2">
+                                        <option selected>am</option>
+                                        <option>pm</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
                     <h3>Individual Class</h3>
                     <!--class selection fieldset-->
                 </section>
