@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    border-style: none;
     box-sizing: border-box;
     background-color: var(--background-color);
     font-family: 'Merriweather', serif;
@@ -55,7 +56,8 @@ footer {
 
 .page {
     min-height: 600px;
-    padding: 0 2.5rem; 
+    padding: 0; 
+    margin: 0;
 }
 
 .page-even {
@@ -104,7 +106,9 @@ footer {
 
 .social-networks {
     text-align: center;
-    padding: 0.5rem 0; 
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom:  0; 
     padding-inline-start: 0;
 }
 
@@ -123,5 +127,9 @@ footer {
     justify-content: center;
     font-size: x-small;
     margin: 0;
+    padding: 0;
+}
+
+#copyright>p{
     padding: 0;
 }
