@@ -28,22 +28,99 @@
         <section id="pgm-about" class="page page-odd">
             <h1>The LatAm Lingo Difference</h1>
             <h2>Progam Overview</h2>
-            <p>skllskd</p>
+            <p>
+                LatAm Lingo offers a holistic approach to education through complementary programs of indigenous
+                languages and cultural awareness for practical communications across Latin America. To ensure that
+                our material is correct and current, we work closely with several indigenous communities in course
+                development and maintenance. We are pleased to, that to date, we have the approval of both the
+                Mapuche in Chile and by Quechua communities in Bolivia and Peru.
+            </p>
+            <p>
+                Each program is delivered in a set of 4 classes that are currently arranged to start on the first
+                Monday of each calendar month.
+            </p>
+            <p>
+                In addition to our listed programs, LatAm Lingo can create and deliver bespoke training programs for
+                company employees or other organizations. For more information, please contact us at
+                <a href="mailto:sales@LatAmLingo.co.cl">sales@LatAmLingo.co.cl</a></p>
 
             <!--Program sections-->
             <section id="pgm-lang">
                 <h2>Language Programs</h2>
-                <p>slkdsfsh</p>
+                <p>
+                    Our language programs cover the two most widely spoken indigenous languages today; Mapudungun and
+                    Quechua. For students interested in proficiency accreditation, we have structured our courses
+                    conform to the CEFR and ACTFL Common Reference Levels for homogeneity and certification (if
+                    necessary). Currently, we offer courses covering language proficiency levels A1-B2.[article]
+                </p>
             </section>
 
             <section id="pgm-cltr">
                 <h2>Culture Programs</h2>
+                <p>
+                    Our cultural programs were developed in-house and are structured as follows:
+                </p>
+                <table id="culture-table" aria-label="Table of Culture Programs">
+                    <tr>
+                        <th>Program Title</th>
+                        <th>Program Description</th>
+                    </tr>
+                    <tr>
+                        <td>Introduction</td>
+                        <td>Historical introduction to pre-colonization SA cultures, tribes, and languages.</td>
+                    </tr>
+                    <tr>
+                        <td>Customs and Traditions</td>
+                        <td>Exploration of the history and current customs and traditions of the Mapuche and Quechua
+                            communities.</td>
+                    </tr>
+                    <tr>
+                        <td>Pre-Columbian Communities</td>
+                        <td>Exploration of other pre-Columbian indigenous communities such as Muisca, Tairona, and
+                            Quimbaya.</td>
+                    </tr>
+                    <tr>
+                        <td>Colonialism Impact: Invasion to today</td>
+                        <td>Exploration of the colonisation of Latin America, the timeline of events leading to the
+                            present day, discussion of the current situation for indigenous communities across Latin
+                            America.</td>
+                    </tr>
+                </table>
             </section>
 
         </section>
 
+        <!--Gallery page-->
+        <section id="gallery" class="page page-even">
+            <h1>Gallery</h1>
+            <div id="photos">
+                <img src="./assets/images/gallery/img-1.jpg" alt="Native man in rainforest with parrot on shoulder">
+                <img src="./assets/images/gallery/img-2.jpg"
+                    alt="Two Quechua women and youth wearing colorful native attire and hats, in field">
+                <img src="./assets/images/gallery/img-3.jpg" alt="Mapudungun man in knitting traditional garment">
+                <img src="./assets/images/gallery/img-9.jpg"
+                    alt="Salvadoran woman preparing Pupusas - maize flour pancake filled with cheese, refried beans or pork">
+                <img src="./assets/images/gallery/img-4.jpg"
+                    alt="Outdoor market on cobbled street with mountain tops in the background">
+                <img src="./assets/images/gallery/img-8.jpg" alt="Two native women enjoying a chat at a festive lunch">
+                <img src="./assets/images/gallery/img-5.jpg"
+                    alt="Smiling young woman enjoying a tradional meal with others">
+                <img src="./assets/images/gallery/img-6.jpg" alt="Inca temple">
+                <img src="./assets/images/gallery/img-7.jpg" alt="Young woman preparing native dishes on outdoor stove">
+                <img src="./assets/images/gallery/img-10.jpg"
+                    alt="Mapudungun man outdoor in traditional winter clothing">
+                <img src="./assets/images/gallery/img-11.jpg" alt="Machu Picchu">
+                <img src="./assets/images/gallery/img-12.jpg" alt="Quechuan man in tradional hat and coat with llama">
+                <img src="./assets/images/gallery/img-13.jpg" alt="Aymaran man crafting traditional mask">
+                <img src="./assets/images/gallery/img-15.jpg" alt="Demonstation of hand loom weaving">
+                <img src="./assets/images/gallery/img-14.jpg"
+                    alt="Quechuan woman in tradional hat and coat holding a baby goat">
+
+            </div>
+        </section>
+
         <!--Register page-->
-        <section id="register" class="page page-even">
+        <section id="register" class="page page-odd">
             <h1>Register</h1>
             <form method="post" action="https://formdump.codeinstitute.net/">
 
@@ -170,13 +247,31 @@
                                 </td>
                             </tr>
                         </table>
-                    <h3>Individual Class</h3>
-                    <!--class selection fieldset-->
+                        <h3>Individual Class</h3>
+                        <!--class selection fieldset-->
+                        <div id="indi_class">
+                            <p>Please request your preferred date, time and number of hours. We will contact
+                                you to confirm or arrange an alternative.</p>
+                            <fieldset id="class-req">
+                                <legend>Class request</legend>
+                                Language:
+                                <label for="icl-ma">Mapudungun</label>
+                                <input type="radio" id="icl-ma" name="db-iclanguage" value="ma">
+                                <label for="icl-qu">Quechua</label>
+                                <input type="radio" id="icl-qu" name="db-iclanguage" value="qu">
+
+                                Date and time:
+                                <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
+                                    max="2024-12-20" aria-label="Requested Date">
+                                <input type="time" id="icl-time" name="db-icltime" min="08:30:00"
+                                    max="16:00:00" aria-label="Requested Time">
+                            </fieldset>
+                        </div>
+                    </div>
                 </section>
                 <input type="submit" id="register-btn" value="Register Me">
             </form>
         </section>
-
     </main>
 
     <footer>
