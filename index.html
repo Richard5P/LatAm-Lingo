@@ -91,7 +91,8 @@
         </section>
 
         <!--Gallery page-->
-        <section id="Gallery" class="page page-even">
+
+        <section id="gallery" class="page page-even">
             <h1>Gallery</h1>
             <div id="photos">
                 <img src="./assets/images/gallery/img-1.jpg" alt="Native man in rainforest with parrot on shoulder">
@@ -115,7 +116,6 @@
                 <img src="./assets/images/gallery/img-15.jpg" alt="Demonstation of hand loom weaving">
                 <img src="./assets/images/gallery/img-14.jpg"
                     alt="Quechuan woman in tradional hat and coat holding a baby goat">
-
             </div>
         </section>
 
@@ -249,6 +249,25 @@
                         </table>
                         <h3>Individual Class</h3>
                         <!--class selection fieldset-->
+                        <div id="indi_class">
+                            <p>Please request your preferred date, time and number of hours. We will contact
+                                you to confirm or arrange an alternative.</p>
+                            <fieldset id="class-req">
+                                <legend>Class request</legend>
+                                Language:
+                                <label for="icl-ma">Mapudungun</label>
+                                <input type="radio" id="icl-ma" name="db-iclanguage" value="ma">
+                                <label for="icl-qu">Quechua</label>
+                                <input type="radio" id="icl-qu" name="db-iclanguage" value="qu">
+
+                                Date and time:
+                                <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
+                                    max="2024-12-20" aria-label="Requested Date">
+                                <input type="time" id="icl-time" name="db-icltime" min="08:30:00"
+                                    max="16:00:00" aria-label="Requested Time">
+                            </fieldset>
+                        </div>
+                    </div>
                 </section>
                 <input type="submit" id="register-btn" value="Register Me">
             </form>
