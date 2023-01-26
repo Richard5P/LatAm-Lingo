@@ -13,7 +13,24 @@
 
 <body>
     <header>
+        <a href="index.html">
+            <h1>LatAm Lingo</h1>
+        </a>
 
+        <!-- hamburger toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#pgm-about">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -261,10 +278,10 @@
                                 <input type="radio" id="icl-qu-rb" name="db-iclanguage" value="qu">
 
                                 Date and time:
-                                <input type="date" id="icl-date" name="db-icldate" min="2023-01-01"
-                                    max="2024-12-20" aria-label="Requested Date">
-                                <input type="time" id="icl-time" name="db-icltime" min="08:30:00"
-                                    max="16:00:00" aria-label="Requested Time">
+                                <input type="date" id="icl-date" name="db-icldate" min="2023-01-01" max="2024-12-20"
+                                    aria-label="Requested Date">
+                                <input type="time" id="icl-time" name="db-icltime" min="08:30:00" max="16:00:00"
+                                    aria-label="Requested Time">
                             </fieldset>
                         </div>
                     </div>
