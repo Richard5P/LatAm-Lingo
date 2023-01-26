@@ -5,10 +5,10 @@
 :root {
     --background-color: rgb(51, 255, 0);
     --text-color: #FFDCE5;
-    --hdr-ftr-back-color:#0F0C30;
-    --hdr-ftr-color:#FFDCE5;
+    --hdr-ftr-back-color: #0F0C30;
+    --hdr-ftr-color: #FFDCE5;
     --page-even-back-color: #FFDCE5;
-    --page-odd-back-color:#0F0C30;
+    --page-odd-back-color: #0F0C30;
     --text-even-color: #0F0C30;
     --text-odd-color: #FFDCE5;
     --hdr-ftr-height: 4rem;
@@ -37,19 +37,24 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    line-height: 4rem;
+    line-height: var(--hdr-ftr-height);
     text-align: center;
 }
 
-header>a>h1 {
-  margin: auto 0;
-  padding: auto 0;
+header>a {
+    text-decoration: none;
 }
 
-section h1:first-child{
+header>a>h1 {
+    margin: auto 0;
+    padding: auto 0;
+    color: var(--hdr-ftr-color)
+}
+
+section h1:first-child {
     padding: 0;
     margin: 0;
-    color:blue;
+    color: blue;
 }
 
 footer {
@@ -74,7 +79,7 @@ nav {
     left: .02em;
     /* hugs the left of the viewport */
     background: var(--header-color);
-/*    width: 100%; */
+    /*    width: 100%; */
     display: none;
 }
 
@@ -86,11 +91,11 @@ nav ul {
 
 nav li {
     /* this gives some spacing around the menu items */
-  display:block;
-  padding: .5em .05em;
-  line-height: 1em;
-  background-color: var(--hdr-ftr-back-color);
-  width: 100%;
+    display: block;
+    padding: .5em .05em;
+    line-height: 1em;
+    background-color: var(--hdr-ftr-back-color);
+    width: 100%;
 }
 
 nav a {
@@ -162,20 +167,19 @@ nav a:hover {
     top: 6px;
 }
 
-
 .page {
     min-height: 80vh;
-    padding: 0; 
+    padding: 0;
     margin: 0;
 }
 
 .page-even {
-    color:var(--text-even-color);
+    color: var(--text-even-color);
     background-color: var(--page-even-back-color);
 }
 
 .page-odd {
-    color:var(--text-odd-color);
+    color: var(--text-odd-color);
     background-color: var(--page-odd-back-color);
 }
 
@@ -199,6 +203,8 @@ nav a:hover {
     text-align: center;
     background-color: transparent;
     color: yellow;
+    font-size: 2.25em;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* gallery styling */
@@ -209,7 +215,7 @@ nav a:hover {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
@@ -219,7 +225,7 @@ nav a:hover {
     text-align: center;
     margin: 0;
     padding-top: 0.5rem;
-    padding-bottom:  0; 
+    padding-bottom: 0;
     padding-inline-start: 0;
 }
 
@@ -241,7 +247,7 @@ nav a:hover {
     padding: 0;
 }
 
-#copyright>p{
+#copyright>p {
     padding: 0;
 }
 
@@ -258,14 +264,14 @@ nav a:hover {
     header {
         /* change the header from block to grid and style the grid */
         display: grid;
-        grid-template-columns:1fr 2fr auto;
+        grid-template-columns: 1fr 2fr auto;
         justify-self: start;
     }
-  
-  header>a>h1 {
-    grid-column: 2/3;
-    align-content: center;
-  }
+
+    header>a>h1 {
+        grid-column: 2/3;
+        align-content: center;
+    }
 
     nav {
         all: unset;
