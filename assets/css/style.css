@@ -11,6 +11,7 @@
     --page-odd-back-color:#0F0C30;
     --text-even-color: #0F0C30;
     --text-odd-color: #FFDCE5;
+    --hdr-ftr-height: 4rem;
 }
 
 
@@ -30,7 +31,7 @@ body {
 }
 
 header {
-    height: 4rem;
+    height: var(--hdr-ftr-height);
     background-color: var(--hdr-ftr-back-color);
     color: var(--hdr-ftr-color);
     position: sticky;
@@ -163,7 +164,7 @@ nav a:hover {
 
 
 .page {
-    min-height: 600px;
+    min-height: 80vh;
     padding: 0; 
     margin: 0;
 }
