@@ -253,7 +253,7 @@ nav a:hover {
     header {
         /* change the header from block to grid and style the grid */
         display: grid;
-        grid-template-columns: 1fr minmax(600px, 3fr) 1fr;
+        grid-template-columns:1fr 2fr auto;
         justify-self: start;
     }
   
@@ -281,8 +281,10 @@ nav a:hover {
     }
 
     nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+        align-self: center;
     }
 
     nav a {
