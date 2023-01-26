@@ -4,12 +4,13 @@
 
 :root {
     --background-color: rgb(51, 255, 0);
-    --text-color: #1b1842;
-    --hdr-ftr-color:#C6E6F5;
-    --page-even-back-color: #F5CFEB;
-    --page-odd-back-color:#D9FEDF;
-    --text-even-color: #1b1842;
-    --text-odd-color: #1b1842;
+    --text-color: #FFDCE5;
+    --hdr-ftr-back-color:#FFDCE5;
+    --hdr-ftr-color:#0F0C30;
+    --page-even-back-color: #FFDCE5;
+    --page-odd-back-color:#0F0C30;
+    --text-even-color: #0F0C30;
+    --text-odd-color: #FFDCE5;
 }
 
 
@@ -30,7 +31,8 @@ body {
 
 header {
     height: 4rem;
-    background-color: var(--hdr-ftr-color);
+    background-color: var(--hdr-ftr-back-color-color);
+    color: var(--hdr-ftr-color);
     position: sticky;
     top: 0;
     left: 0;
@@ -46,7 +48,8 @@ section h1:first-child{
 
 footer {
     height: 4rem;
-    background-color: var(--hdr-ftr-color);
+    background-color: var(--hdr-ftr-back-color-color);
+    color: var(--hdr-ftr-color);
     position: sticky;
     top: 100%;
     left: 0;
@@ -61,11 +64,13 @@ footer {
 }
 
 .page-even {
-    background-color: #30F5F0;
+    color:var(--text-even-color);
+    background-color: var(--page-even-back-color);
 }
 
 .page-odd {
-    background-color: #F5CFEB;
+    color:var(--text-odd-color);
+    background-color: var(--page-odd-back-color);
 }
 
 #home {
