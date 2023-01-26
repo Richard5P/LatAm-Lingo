@@ -5,8 +5,8 @@
 :root {
     --background-color: rgb(51, 255, 0);
     --text-color: #FFDCE5;
-    --hdr-ftr-back-color:#FFDCE5;
-    --hdr-ftr-color:#0F0C30;
+    --hdr-ftr-back-color:#0F0C30;
+    --hdr-ftr-color:#FFDCE5;
     --page-even-back-color: #FFDCE5;
     --page-odd-back-color:#0F0C30;
     --text-even-color: #0F0C30;
@@ -31,7 +31,7 @@ body {
 
 header {
     height: 4rem;
-    background-color: var(--hdr-ftr-back-color-color);
+    background-color: var(--hdr-ftr-back-color);
     color: var(--hdr-ftr-color);
     position: sticky;
     top: 0;
@@ -41,8 +41,8 @@ header {
 }
 
 header>a>h1 {
-  margin-top: 0;
-  padding-top: 0;
+  margin: auto 0;
+  padding: auto 0;
 }
 
 section h1:first-child{
@@ -52,8 +52,8 @@ section h1:first-child{
 }
 
 footer {
-    height: 4rem;
-    background-color: var(--hdr-ftr-back-color-color);
+    height: var(--hdr-ftr-height);
+    background-color: var(--hdr-ftr-back-color);
     color: var(--hdr-ftr-color);
     position: sticky;
     top: 100%;
@@ -88,7 +88,7 @@ nav li {
   display:block;
   padding: .5em .05em;
   line-height: 1em;
-  background-color: var(--hdr-ftr-color);
+  background-color: var(--hdr-ftr-back-color);
   width: 100%;
 }
 
