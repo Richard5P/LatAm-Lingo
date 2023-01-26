@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 #hero {
-    height: 600px;
+    height: 100vh;
     background-image: url(../images/hero.jpg);
     background-clip: border-box;
     background-repeat: no-repeat;
