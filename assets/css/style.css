@@ -57,13 +57,10 @@ header>a>h1 {
 section>h1:first-child {
     padding: 0;
     margin: 0;
-    color: red;
+    text-align: center;
+    font-size: 2.25em;
+    border-bottom: .025em solid;
 }
-
-section>h2 {
-
-}
-
 
 footer {
     height: var(--hdr-ftr-height);
@@ -134,7 +131,7 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: var(--left-align);
+    margin-left: .5em;
     /* align with nav li */
     height: 100%;
     /* 100% of header, for vertical center with flex */
@@ -182,6 +179,7 @@ nav a:hover {
     padding: 0;
     margin: 0;
 }
+
 
 .page-even {
     color: var(--text-even-color);
