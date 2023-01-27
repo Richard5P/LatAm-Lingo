@@ -30,6 +30,8 @@ body {
     position: relative;
 }
 
+/* Section, tag, id and class styling */
+
 header {
     height: var(--hdr-ftr-height);
     background-color: var(--hdr-ftr-back-color);
@@ -67,6 +69,8 @@ footer {
     padding-top: .05rem;
     display: block;
 }
+
+
 
 /*                       Nav styling                    */
 /* Nav styling with hamburger */
