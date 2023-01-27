@@ -3,15 +3,16 @@
 /* CSS variables */
 
 :root {
-    --background-color: rgb(51, 255, 0);
-    --text-color: #FFDCE5;
+    --background-color:#0F0C30;
+    --text-color: #0F0C30;
     --hdr-ftr-back-color: #0F0C30;
     --hdr-ftr-color: #FFDCE5;
-    --page-even-back-color: #FFDCE5;
-    --page-odd-back-color: #0F0C30;
-    --text-even-color: #0F0C30;
-    --text-odd-color: #FFDCE5;
+    --page-odd-back-color: #FFDCE5;
+    --page-even-back-color: #0F0C30;
+    --text-odd-color: #0F0C30;
+    --text-even-color: #FFDCE5;
     --hdr-ftr-height: 4rem;
+    --left-align: .5em; 
 }
 
 
@@ -29,6 +30,8 @@ body {
     color: var(--text-color);
     position: relative;
 }
+
+/* Section, tag, id and class styling */
 
 header {
     height: var(--hdr-ftr-height);
@@ -51,11 +54,16 @@ header>a>h1 {
     color: var(--hdr-ftr-color)
 }
 
-section h1:first-child {
+section>h1:first-child {
     padding: 0;
     margin: 0;
-    color: blue;
+    color: red;
 }
+
+section>h2 {
+
+}
+
 
 footer {
     height: var(--hdr-ftr-height);
@@ -68,6 +76,8 @@ footer {
     display: block;
 }
 
+
+
 /*                       Nav styling                    */
 /* Nav styling with hamburger */
 nav {
@@ -78,7 +88,8 @@ nav {
     text-align: left;
     left: .02em;
     /* hugs the left of the viewport */
-    background: var(--header-color);
+    background-color: var(--hdr-ftr-back-color);
+    color:var(--hdr-ftr-color);
     /*    width: 100%; */
     display: none;
 }
@@ -94,12 +105,11 @@ nav li {
     display: block;
     padding: .5em .05em;
     line-height: 1em;
-    background-color: var(--hdr-ftr-back-color);
     width: 100%;
 }
 
 nav a {
-    color: var(--text-color);
+    color: var(--hdr-ftr-color);
     text-decoration: none;
     font-size: .9em;
     text-transform: uppercase;
@@ -124,7 +134,7 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: .5em;
+    margin-left: var(--left-align);
     /* align with nav li */
     height: 100%;
     /* 100% of header, for vertical center with flex */
@@ -189,7 +199,7 @@ nav a:hover {
 }
 
 #hero {
-    height: 100vh;
+    height: 80vh;
     background-image: url(../images/hero.jpg);
     background-clip: border-box;
     background-repeat: no-repeat;
@@ -236,7 +246,7 @@ nav a:hover {
 .social-networks i {
     font-size: 160%;
     padding: 0 1rem 0 1rem;
-    color: var(--text-color);
+    color: var(--hdr-ftr-color);
 }
 
 #copyright {
