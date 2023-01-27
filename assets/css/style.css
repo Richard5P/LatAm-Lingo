@@ -3,14 +3,14 @@
 /* CSS variables */
 
 :root {
-    --background-color: rgb(51, 255, 0);
-    --text-color: #FFDCE5;
+    --background-color:#0F0C30;
+    --text-color: #0F0C30;
     --hdr-ftr-back-color: #0F0C30;
     --hdr-ftr-color: #FFDCE5;
-    --page-even-back-color: #FFDCE5;
-    --page-odd-back-color: #0F0C30;
-    --text-even-color: #0F0C30;
-    --text-odd-color: #FFDCE5;
+    --page-odd-back-color: #FFDCE5;
+    --page-even-back-color: #0F0C30;
+    --text-odd-color: #0F0C30;
+    --text-even-color: #FFDCE5;
     --hdr-ftr-height: 4rem;
 }
 
@@ -236,7 +236,7 @@ nav a:hover {
 .social-networks i {
     font-size: 160%;
     padding: 0 1rem 0 1rem;
-    color: var(--text-color);
+    color: var(--hdr-ftr-color);
 }
 
 #copyright {
