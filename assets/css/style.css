@@ -58,7 +58,7 @@ header {
     padding-left: 0;
     padding-right: 0;
     font-size: 2.25em;
-    color: var(--hdr-ftr-color)
+    color: var(--hdr-ftr-color);
 }
 
 footer {
@@ -233,20 +233,6 @@ nav a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
-/* about styling   */
-
-section>h3{
-
-}
-
-section h4{
-    margin: .75rem 0 .05rem 3rem;
-    padding: .5rem 0 .1rem 0;
-}
-
-
-
-
 
 /* gallery styling */
 
@@ -291,7 +277,6 @@ section h4{
 #copyright>p {
     padding: 0;
 }
-
 
 
 
