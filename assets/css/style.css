@@ -31,11 +31,14 @@ body {
     position: relative;
 }
 
+/* this is to avoid having more than one h1 for accesibility while providing visual similarity to section heading */
 h2, h3, h4 {
     font-size: 1.5em;
 }
 
 /* Section, tag, id and class styling */
+
+/* Header styling  */
 
 header {
     height: var(--hdr-ftr-height);
@@ -58,24 +61,6 @@ header {
     color: var(--hdr-ftr-color)
 }
 
-section>h2:first-child {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 2.15em;
-    border-bottom: .025em solid;
-}
-
-section>h3{
-    margin: .75rem 0 .05rem 4.5rem;
-    padding: .5rem 0 .1rem 0;
-}
-
-section h4{
-    margin: .75rem 0 .05rem 3rem;
-    padding: .5rem 0 .1rem 0;
-}
-
 footer {
     height: var(--hdr-ftr-height);
     background-color: var(--hdr-ftr-back-color);
@@ -86,7 +71,6 @@ footer {
     padding-top: .05rem;
     display: block;
 }
-
 
 
 /*                       Nav styling                    */
@@ -188,6 +172,8 @@ nav a:hover {
     top: 6px;
 }
 
+/* body styling  */
+
 .page {
     min-height: 80vh;
     padding: 0;
@@ -204,6 +190,8 @@ nav a:hover {
     color: var(--text-odd-color);
     background-color: var(--page-odd-back-color);
 }
+
+/* hero section styling */
 
 #home {
     margin: 0;
@@ -228,6 +216,31 @@ nav a:hover {
     font-size: 2.25em;
     text-shadow: 1px 1px 2px black;
 }
+
+/* about styling   */
+
+
+.section-hdr {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2.15em;
+    border-bottom: .025em solid;
+}
+
+section>h3{
+    margin: .75rem 0 .05rem 4.5rem;
+    padding: .5rem 0 .1rem 0;
+}
+
+section h4{
+    margin: .75rem 0 .05rem 3rem;
+    padding: .5rem 0 .1rem 0;
+}
+
+
+
+
 
 /* gallery styling */
 
@@ -272,6 +285,13 @@ nav a:hover {
 #copyright>p {
     padding: 0;
 }
+
+
+
+
+
+
+/*       Responsive Styling        */
 
 @media screen and (min-width: 1008px) {
     /* apply to displays 1008px and larger */
