@@ -31,11 +31,14 @@ body {
     position: relative;
 }
 
+/* this is to avoid having more than one h1 for accesibility while providing visual similarity to section heading */
 h2, h3, h4 {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 /* Section, tag, id and class styling */
+
+/* Header styling  */
 
 header {
     height: var(--hdr-ftr-height);
@@ -48,33 +51,14 @@ header {
     text-align: center;
 }
 
-header>a {
+#logo {
     text-decoration: none;
-}
-
-header>a>h1 {
-    margin: auto 0;
-    padding: auto 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 2.25em;
-    color: var(--hdr-ftr-color)
-}
-
-section>h2:first-child {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 2.15em;
-    border-bottom: .025em solid;
-}
-
-section>h3{
-    margin: .75rem 0 .05rem 4.5rem;
-    padding: .5rem 0 .1rem 0;
-}
-
-section h4{
-    margin: .75rem 0 .05rem 3rem;
-    padding: .5rem 0 .1rem 0;
+    color: var(--hdr-ftr-color);
 }
 
 footer {
@@ -87,7 +71,6 @@ footer {
     padding-top: .05rem;
     display: block;
 }
-
 
 
 /*                       Nav styling                    */
@@ -189,12 +172,13 @@ nav a:hover {
     top: 6px;
 }
 
+/* body styling  */
+
 .page {
     min-height: 80vh;
     padding: 0;
     margin: 0;
 }
-
 
 .page-even {
     color: var(--text-even-color);
@@ -205,6 +189,25 @@ nav a:hover {
     color: var(--text-odd-color);
     background-color: var(--page-odd-back-color);
 }
+
+.sec-hdr2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: .025em solid;
+}
+
+.sec-hdr3 {
+    margin: .75rem 0 .05rem 4.5rem;
+    padding: .5rem 0 .1rem 0;
+}
+
+.sec-hdr4 {
+    margin: .75rem 0 .05rem 3rem;
+    padding: .5rem 0 .1rem 0; 
+}
+
+/* hero section styling */
 
 #home {
     margin: 0;
@@ -229,6 +232,7 @@ nav a:hover {
     font-size: 2.25em;
     text-shadow: 1px 1px 2px black;
 }
+
 
 /* gallery styling */
 
@@ -273,6 +277,12 @@ nav a:hover {
 #copyright>p {
     padding: 0;
 }
+
+
+
+
+
+/*       Responsive Styling        */
 
 @media screen and (min-width: 1008px) {
     /* apply to displays 1008px and larger */
