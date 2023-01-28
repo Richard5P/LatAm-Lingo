@@ -61,17 +61,6 @@ header {
     color: var(--hdr-ftr-color);
 }
 
-footer {
-    height: var(--hdr-ftr-height);
-    background-color: var(--hdr-ftr-back-color);
-    color: var(--hdr-ftr-color);
-    position: sticky;
-    top: 100%;
-    left: 0;
-    padding-top: .05rem;
-    display: block;
-}
-
 
 /*                       Nav styling                    */
 /* Nav styling with hamburger */
@@ -233,6 +222,8 @@ nav a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
+/* about section styling */
+
 
 /* gallery styling */
 
@@ -246,7 +237,19 @@ nav a:hover {
     width: 100%;
 }
 
-/* footer social networks styling */
+
+/* footer and social networks styling */
+
+footer {
+    height: var(--hdr-ftr-height);
+    background-color: var(--hdr-ftr-back-color);
+    color: var(--hdr-ftr-color);
+    position: sticky;
+    top: 100%;
+    left: 0;
+    padding-top: .05rem;
+    display: block;
+}
 
 .social-networks {
     text-align: center;
