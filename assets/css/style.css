@@ -31,6 +31,10 @@ body {
     position: relative;
 }
 
+h2, h3, h4 {
+    1.25em;
+}
+
 /* Section, tag, id and class styling */
 
 header {
