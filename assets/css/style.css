@@ -32,9 +32,9 @@ body {
 }
 
 /* this is to avoid having more than one h1 for accesibility while providing visual similarity to section heading */
-h2, h3, h4 {
-    font-size: 1.75em;
-}
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.17em; }
 
 /* Section, tag, id and class styling */
 
