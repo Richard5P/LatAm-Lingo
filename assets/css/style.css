@@ -223,7 +223,9 @@ nav a:hover {
 }
 
 /* about section styling */
-
+#culture-table{
+   border-spacing: 0.75rem 1.25rem;
+}
 
 /* gallery styling */
 
