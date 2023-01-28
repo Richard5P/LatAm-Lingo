@@ -33,7 +33,7 @@ body {
 
 /* this is to avoid having more than one h1 for accesibility while providing visual similarity to section heading */
 h2, h3, h4 {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 /* Section, tag, id and class styling */
@@ -180,7 +180,6 @@ nav a:hover {
     margin: 0;
 }
 
-
 .page-even {
     color: var(--text-even-color);
     background-color: var(--page-even-back-color);
@@ -189,6 +188,23 @@ nav a:hover {
 .page-odd {
     color: var(--text-odd-color);
     background-color: var(--page-odd-back-color);
+}
+
+.sec-hdr2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: .025em solid;
+}
+
+.sec-hdr3 {
+    margin: .75rem 0 .05rem 4.5rem;
+    padding: .5rem 0 .1rem 0;
+}
+
+.sec-hdr4 {
+    margin: .75rem 0 .05rem 3rem;
+    padding: .5rem 0 .1rem 0; 
 }
 
 /* hero section styling */
@@ -219,18 +235,8 @@ nav a:hover {
 
 /* about styling   */
 
-
-.section-hdr {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 2.15em;
-    border-bottom: .025em solid;
-}
-
 section>h3{
-    margin: .75rem 0 .05rem 4.5rem;
-    padding: .5rem 0 .1rem 0;
+
 }
 
 section h4{
