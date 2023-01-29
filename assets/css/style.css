@@ -27,6 +27,7 @@ body {
     box-sizing: border-box;
     background-color: var(--background-color);
     font-family: 'Merriweather', serif;
+    font-size:1.05rem;
     color: var(--text-color);
     position: relative;
 }
@@ -42,6 +43,11 @@ h3 {
 
 h4 {
     font-size: 1.17em;
+}
+
+p {
+    margin: .5rem 1.5rem;
+    padding: auto 1rem;
 }
 
 /* Section, tag, id and class styling */
@@ -241,6 +247,7 @@ nav a:hover {
     border-spacing: 0.5rem 1.5rem;
 }
 
+/* table header for accessibility only */
 #culture-table>tbody>tr>th {
     display: none;
 }
