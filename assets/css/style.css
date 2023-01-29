@@ -209,8 +209,8 @@ nav a:hover {
 }
 
 .sec-hdr4 {
-    margin: .75rem 0 .05rem 3rem;
-    padding: .5rem 0 .1rem 0;
+    margin: .5rem 0 .05rem 3rem;
+    padding: .25rem 0 .05rem 0;
 }
 
 /* hero section styling */
@@ -278,20 +278,31 @@ nav a:hover {
 
 /* register section styling */
 
-/*caption and first column heading for accessibility only */
+#grp-cls-tbl{
+    margin-left: 4.5rem;    
+}
+
+/*caption for accessibility only */
 #grp-cls-tbl>caption{
     display: none;
 }
 
-#grp-cls-tbl tr>td{
-    text-align: right;
-    width: 2em;
+#grp-cls-tbl {
+    border-spacing: 1em 0;
 }
 
-#grp-cls-hdg{
-    margin-left: 4.5rem;    
+#grp-cls-tbl>tr {
+    margin: 0;
 }
 
+#register-btn {
+    background-color:white;
+    color: var(--page-odd-color);
+    border: .05rem solid var(--page-odd-back-color);
+    text-align: center;
+    font-size: 1.2em;
+    display: inline-block;
+}
 
 /* footer and social networks styling */
 
