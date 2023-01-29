@@ -189,20 +189,16 @@
                 <section id="reg-pgm">
                     <h3 class="sec-hdr3">Program Selection</h3>
                     <h4 class="sec-hdr4">Group Classes</h4>
-                    <div id="group_classes">
-                        <table>
+                    <div id="group-classes">
+                        <table id="grp-cls-tbl">
                             <caption>Group Class Selections</caption>
                             <tr>
-                                <th>Select Checkbox</th>
                                 <th>Program</th>
                                 <th>Start Month</th>
                                 <th>AM / PM</th>
                             </tr>
                             <!-- Note: the number of rows are fixed -->
                             <tr>
-                                <td>
-                                    <input type="checkbox" id="cb-class-sel-1">
-                                </td>
                                 <td>
                                     <!-- Note: following fields should be required if the checkbox is checked-->
                                     <!-- id and name should use an array instead of unique values-->
@@ -233,9 +229,6 @@
                             </tr>
 
                             <tr>
-                                <td>
-                                    <input type="checkbox" id="cb-class-sel-2">
-                                </td>
                                 <td>
                                     <!-- Note: following fields should be required if the checkbox is checked-->
                                     <select id="class-subject-2" name="db_subject-2">
@@ -290,12 +283,14 @@
                         </div>
                     </div>
                 </section>
-                <input type="submit" id="register-btn" value="Register Me">
+                <div>
+                    <input type="submit" id="register-btn" value="Register Me">
+                </div>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer>S
         <div>
             <div>
                 <ul class="social-networks">
