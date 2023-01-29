@@ -32,9 +32,9 @@ body {
 }
 
 /* this is to avoid having more than one h1 for accesibility while providing visual similarity to section heading */
-h2, h3, h4 {
-    font-size: 1.75em;
-}
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.17em; }
 
 /* Section, tag, id and class styling */
 
@@ -59,17 +59,6 @@ header {
     padding-right: 0;
     font-size: 2.25em;
     color: var(--hdr-ftr-color);
-}
-
-footer {
-    height: var(--hdr-ftr-height);
-    background-color: var(--hdr-ftr-back-color);
-    color: var(--hdr-ftr-color);
-    position: sticky;
-    top: 100%;
-    left: 0;
-    padding-top: .05rem;
-    display: block;
 }
 
 
@@ -233,6 +222,10 @@ nav a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
+/* about section styling */
+#culture-table{
+   border-spacing: 0.75rem 1.25rem;
+}
 
 /* gallery styling */
 
@@ -246,7 +239,19 @@ nav a:hover {
     width: 100%;
 }
 
-/* footer social networks styling */
+
+/* footer and social networks styling */
+
+footer {
+    height: var(--hdr-ftr-height);
+    background-color: var(--hdr-ftr-back-color);
+    color: var(--hdr-ftr-color);
+    position: sticky;
+    top: 100%;
+    left: 0;
+    padding-top: .05rem;
+    display: block;
+}
 
 .social-networks {
     text-align: center;
