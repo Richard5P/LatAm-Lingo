@@ -50,6 +50,9 @@ p {
     padding: auto 1rem;
 }
 
+label {
+    margin: auto .5rem;
+}
 /* Section, tag, id and class styling */
 
 /* Header styling  */
@@ -271,6 +274,22 @@ nav a:hover {
 
 #photos>img {
     width: 100%;
+}
+
+/* register section styling */
+
+/*caption and first column heading for accessibility only */
+#grp-cls-tbl>caption{
+    display: none;
+}
+
+#grp-cls-tbl tr>td{
+    text-align: right;
+    width: 2em;
+}
+
+#grp-cls-hdg{
+    margin-left: 4.5rem;    
 }
 
 
