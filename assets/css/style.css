@@ -3,7 +3,7 @@
 /* CSS variables */
 
 :root {
-    --background-color:#0F0C30;
+    --background-color: #0F0C30;
     --text-color: #FFDCE5;
     --hdr-ftr-back-color: #0F0C30;
     --hdr-ftr-color: #FFDCE5;
@@ -12,7 +12,7 @@
     --text-odd-color: #0F0C30;
     --text-even-color: #FFDCE5;
     --hdr-ftr-height: 4rem;
-    --left-align: .5em; 
+    --left-align: .5em;
 }
 
 
@@ -32,9 +32,17 @@ body {
 }
 
 /* this is to avoid having more than one h1 for accesibility while providing visual similarity to section heading */
-h2 { font-size: 2.0em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.17em; }
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.17em;
+}
 
 /* Section, tag, id and class styling */
 
@@ -73,7 +81,7 @@ nav {
     left: .02em;
     /* hugs the left of the viewport */
     background-color: var(--hdr-ftr-back-color);
-    color:var(--hdr-ftr-color);
+    color: var(--hdr-ftr-color);
     /*    width: 100%; */
     display: none;
 }
@@ -193,7 +201,7 @@ nav a:hover {
 
 .sec-hdr4 {
     margin: .75rem 0 .05rem 3rem;
-    padding: .5rem 0 .1rem 0; 
+    padding: .5rem 0 .1rem 0;
 }
 
 /* hero section styling */
@@ -223,8 +231,27 @@ nav a:hover {
 }
 
 /* about section styling */
-#culture-table{
-   border-spacing: 0.75rem 1.25rem;
+
+#pgm-cltr p{
+    margin-bottom: 0;
+}
+
+#culture-table {
+    margin-top: 0;
+    border-spacing: 0.5rem 1.5rem;
+}
+
+#culture-table>tbody>tr>th {
+    display: none;
+}
+
+#culture-table>tbody>tr>td:first-child {
+    padding: 0 0.75rem;
+    font-weight: bold;
+}
+
+#culture-table>tbody>tr>td:nth-child(2) {
+    padding: 0 3rem;
 }
 
 /* gallery styling */
