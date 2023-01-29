@@ -47,11 +47,13 @@ h4 {
 
 p {
     margin: .5rem 1.5rem;
-    padding: auto 1rem;
+    padding-right:  1rem;
+    padding-left:  1rem;
 }
 
 label {
-    margin: auto .5rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 /* Section, tag, id and class styling */
 
@@ -346,9 +348,6 @@ footer {
 #copyright>p {
     padding: 0;
 }
-
-
-
 
 
 /*       Responsive Styling        */
