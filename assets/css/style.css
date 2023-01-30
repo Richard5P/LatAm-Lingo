@@ -7,10 +7,10 @@
     --text-color: #FFDCE5;
     --hdr-ftr-back-color: #0F0C30;
     --hdr-ftr-color: #FFDCE5;
-    --page-odd-back-color: #FFDCE5;
+    --page-odd-back-color: #f1f0fb;
     --page-even-back-color: #0F0C30;
     --text-odd-color: #0F0C30;
-    --text-even-color: #FFDCE5;
+    --text-even-color: #f1f0fb;
     --hdr-ftr-height: 4rem;
     --left-align: .5em;
 }
@@ -95,7 +95,7 @@ nav {
 }
 
 nav ul {
-    margin: 0;
+    margin: 0 .5em;
     padding: 0;
     list-style: none;
 }
@@ -238,6 +238,15 @@ nav a:hover {
     text-shadow: 1px 1px 2px black;
 }
 
+#hero-banner {
+    padding-top: 20rem;
+    text-align:center;
+    background-color: transparent;
+    color: yellow;
+	transform: translateX(100%);
+	animation: hero-scroll 15s linear infinite;
+}
+
 /* about section styling */
 
 #pgm-cltr p {
@@ -277,7 +286,7 @@ nav a:hover {
 
 /* register section styling */
 
-reg-req-fs>label {
+#reg-req-fs>label {
     margin-right: .5rem;
     margin-left: .5rem;
 }
@@ -452,5 +461,25 @@ footer {
     fieldset {
         padding-bottom: 0;
     }
+
+    .sec-hdr3 {
+        margin: .5rem 0 .05rem 3.5rem;
+        padding: .25rem 0 .1rem 0;
+    }
+    
+    .sec-hdr4 {
+        margin: .2rem 0 .05rem 2rem;
+        padding: .1rem 0 .05rem 0;
+    }
 }
     
+/* scrolling text animation */
+
+@keyframes hero-scroll {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
