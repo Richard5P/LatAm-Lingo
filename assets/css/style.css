@@ -7,10 +7,10 @@
     --text-color: #FFDCE5;
     --hdr-ftr-back-color: #0F0C30;
     --hdr-ftr-color: #FFDCE5;
-    --page-odd-back-color: #FFDCE5;
+    --page-odd-back-color: #f1f0fb;
     --page-even-back-color: #0F0C30;
     --text-odd-color: #0F0C30;
-    --text-even-color: #FFDCE5;
+    --text-even-color: #f1f0fb;
     --hdr-ftr-height: 4rem;
     --left-align: .5em;
 }
