@@ -21,6 +21,7 @@
 html,
 body {
     min-height: 100vh;
+    max-width: 100vw;
     margin: 0;
     padding: 0;
     border-style: none;
@@ -51,10 +52,6 @@ p {
     padding-left:  1rem;
 }
 
-label {
-    margin-right: .5rem;
-    margin-left: .5rem;
-}
 /* Section, tag, id and class styling */
 
 /* Header styling  */
@@ -280,8 +277,9 @@ nav a:hover {
 
 /* register section styling */
 
-#grp-cls-tbl{
-    margin-left: 4.5rem;    
+reg-req-fs>label {
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
 /*caption for accessibility only */
@@ -296,6 +294,21 @@ nav a:hover {
 #grp-cls-tbl>tr {
     margin: 0;
 }
+
+#indi-class {
+    border :.05rem solid var(--text-odd-color) 
+}
+
+#icl-fs>label {
+    margin-right: .5rem;
+    margin-left: 0;
+}
+
+#icl-fs>input[type="radio"]{
+    margin-right: 0;
+    margin-left: .5rem;
+}
+
 
 #register-btn {
     background-color:white;
@@ -352,8 +365,8 @@ footer {
 
 /*       Responsive Styling        */
 
-@media screen and (min-width: 1008px) {
-    /* apply to displays 1008px and larger */
+@media screen and (min-width: 1190px) {
+    /* apply to displays 1190px and larger */
 
     /* reset only styling property attributes that need to change from small display */
 
