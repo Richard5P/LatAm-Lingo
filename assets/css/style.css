@@ -52,7 +52,6 @@ p {
     padding-left: 1rem;
 }
 
-
 /* Section, tag, id and class styling */
 
 /* Header styling  */
@@ -310,14 +309,21 @@ reg-req-fs>label {
     margin-left: .5rem;
 }
 
+#register-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+}
 
 #register-btn {
     background-color: white;
-    color: var(--page-odd-color);
-    border: .05rem solid var(--page-odd-back-color);
-    text-align: center;
-    font-size: 1.2em;
-    display: inline-block;
+    color: purple;
+    border: 0.25rem groove lightgray;
+    border-radius: 1rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* footer and social networks styling */
@@ -437,6 +443,14 @@ footer {
     /* apply to very small screens, less than 430px to make room for submit button */
     #grp-cls-tbl>tbody>tr>th:last-child{
         font-size:.8em;
+    }
+
+    body {
+        font-size: 1rem;
+    } 
+
+    fieldset {
+        padding-bottom: 0;
     }
 }
     
