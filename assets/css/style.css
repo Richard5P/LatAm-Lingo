@@ -240,7 +240,7 @@ nav a:hover {
 
 #hero-banner {
     height: 2rem;
-    width: 180vw;
+    width: max-content;
     padding-top: 20rem;
     text-align:left;
     background-color: transparent;
@@ -250,7 +250,7 @@ nav a:hover {
     animation-delay: -30ms; 
     animation-timing-function:  linear;
     animation-iteration-count: 2;
-    animation-duration:45s;
+    animation-duration:24s;
 }
 
 /* about section styling */
@@ -488,4 +488,33 @@ footer {
 	100% {
 		transform: translateX(-100%);
 	}
+}
+
+/* submit_ok page styling */
+
+#submit-page {
+    background-color: var(--background-color);
+    color:var(--text-color);
+    font-family: 'Merriweather', serif;
+}
+
+#submit-msg {
+    width:max-content;
+    height: max-content;
+    padding: 2rem;
+}
+
+
+#submit-msg>button {
+    border: .2em solid var(--hdr-ftr-color);
+    background-color: var(--hdr-ftr-back-color);
+    border-radius: 25%;
+    padding: .5em;
+}
+
+#submit-msg>button>a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-even-color);
 }
