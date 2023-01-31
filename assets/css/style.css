@@ -240,7 +240,7 @@ nav a:hover {
 
 #hero-banner {
     height: 2rem;
-    width: 180vw;
+    width: max-content;
     padding-top: 20rem;
     text-align:left;
     background-color: transparent;
