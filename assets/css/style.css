@@ -242,11 +242,15 @@ nav a:hover {
     height: 2rem;
     width: 180vw;
     padding-top: 20rem;
-    text-align:center;
+    text-align:left;
     background-color: transparent;
     color: yellow;
 	transform: translateX(100%);
-	animation: hero-scroll 30s linear 1;
+	animation-name: hero-scroll;
+    animation-delay: -30ms; 
+    animation-timing-function:  linear;
+    animation-iteration-count: 2;
+    animation-duration:45s;
 }
 
 /* about section styling */
