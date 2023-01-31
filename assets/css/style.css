@@ -239,12 +239,14 @@ nav a:hover {
 }
 
 #hero-banner {
+    height: 2rem;
+    width: 180vw;
     padding-top: 20rem;
     text-align:center;
     background-color: transparent;
     color: yellow;
 	transform: translateX(100%);
-	animation: hero-scroll 15s linear infinite;
+	animation: hero-scroll 30s linear 1;
 }
 
 /* about section styling */
