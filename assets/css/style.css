@@ -220,6 +220,8 @@ nav a:hover {
 }
 
 #hero {
+    margin: 0;
+    padding-top: 10rem;
     height: 80vh;
     background-image: url(../images/hero.jpg);
     background-clip: border-box;
@@ -231,6 +233,8 @@ nav a:hover {
 }
 
 #hero>h1 {
+    margin: 5.5rem 0 0 0;
+    padding-top: 4rem;
     text-align: center;
     background-color: transparent;
     color: yellow;
@@ -241,7 +245,7 @@ nav a:hover {
 #hero-banner {
     height: 2rem;
     width: max-content;
-    padding-top: 20rem;
+    margin-top: 2.5rem;
     text-align:left;
     background-color: transparent;
     color: yellow;
