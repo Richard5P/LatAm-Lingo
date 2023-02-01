@@ -3,6 +3,39 @@ Latin America Language and Culture School
 
 LatAm Lingo is school of Latin American indigenous languages and cultures which seeks to educate their students with language and cultural skills for effective communication across Latin America.
 
+The school founders are a group of indigenous and mestizaje friends who met at university and shared the same dismay about how little their classmates (and society in general) knew about the LatAm indigenous population. Beyond the professional desire for a profitable business is their societal goal of education and awareness about their native heritage. The government and NGO heritage organisations partially fund the start-up.
+
+#Table of Contents
+
+1.<details open>
+    <summary><a href="#ux">UX</a></summary>
+
+    <ul>
+    <li><details>
+    <summary><a href="#goals">Goals</a></summary>
+
+    - [Visitor Goals](#visitor-goals)
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+    </details></li>
+
+    <li><details>
+    <summary><a href="#visual-design">Visual Design</a></summary>
+
+    - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colors](#colors)
+    - [Images](#images)
+    - [Styling](#styling)
+    </details></li>
+    </ul>
+</details>
+    -___
+
+
+
+
 ## Credits
 
 ### Content
