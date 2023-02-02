@@ -164,17 +164,21 @@ Thus the a summary of business goals would be:
 ### User Stories
 1. As a user interested in indigenous culture I expect to find meaningful information.
 0. I expect the qualifications first and foremost.
-0. As a user interested in travel, I expect to see different countries on display.
-0. As a user interested in different countries, I expect to see information on the countries.
-0. As a person interested in hiring a photographer, I expect to find an easy way to contact the photographer.
-0. I expect to hear a little about the photographer if I am interested.
-0. I expect to be able to follow the photographer through social media.
-0. I would like to be able to hear about the photographer's updates through social media.
-0. If I were interested in buying a photo, I expect to know where.
+0. As a user interested in language, I expect to see:
+    1. Languages taught.
+    2. Qualifications earned.
+0. As a user interested in different cultures, I expect to see:
+    1. Information on the contents of a class.
+    2. Identification of each culture offered in the program.
+0. As a user, I expect to see:
+    1. Information about the time commitment.
+    2. Information about time schedules.
+0. As a professional user (academic or business), I am interested in the availability of bespoke programs.
 
 ## Visual Design
 ### Wireframes
-Wireframes:
+Wireframes: https://drive.google.com/drive/folders/1MC90lZssd6aURDya1wHe3fbtSQ6kODsg?usp=share_link
+
 
 
 
