@@ -137,19 +137,19 @@ The target audience for LatAm Lingo are:
 
 User goals are:
 - Get an overview of school.
+- Evaluate the authenticity of the site.
 - Explore the various programs.
+- Evaluate the potential benefits from the education.
 - Register their interest.
 - Enroll in a class.
 
- fills these needs by:
-- Opening with a dramatic image and introducing the photographer immediately.
-- The map and gallery are highlighted on the main page to lead users to the images wherevgier they click.
-- Highlighting the Contact page in the header and footer.
-- Providing social media links to follow the photographer.
-- 500px link allows a user to license photos.
-- Providing an interactive map with an info-box that displays country info from an API
-- Showing beautiful images related to each country when clicked.
-- Utilising [EmailJS](https://www.emailjs.com/) to maintain the contact page and the newsletter.
+LatAm Lingo fills these needs by:
+- Providing a comprehensive desciption of the methodology, formats and options available.
+- Opening with a reasuring image of native teachers and banner followed by a page detailing program qualifications.
+- Providing a detailed description of each program.
+- Gallery of pictures of places, events and cultures facilitated by education.
+- Registration page.
+- Program selection options on Registration page.
 
 ### Business Goals
 LatAm Lingo's business goals extend beyond the professional desire for a profitable business. It includes their societal goal of education and awareness about their native heritage. Founded by a group of indigenous and mestizaje friends who met at university and shared the same dismay about how little their classmates (and society in general) knew about the LatAm indigenous population their primary objective is too keep their cultures alive and gain greater understanding. This has been made easier with the sposorship and support of both government and NGO heritage organisations.
@@ -162,8 +162,8 @@ Thus the a summary of business goals would be:
 - Gain interest of potential clients and investors, and connect with social media.
 
 ### User Stories
-1. As a user interested in photography, I expect to see lots of different beautiful photos.
-0. I expect the photos to be highlighted first and foremost.
+1. As a user interested in indigenous culture I expect to find meaningful information.
+0. I expect the qualifications first and foremost.
 0. As a user interested in travel, I expect to see different countries on display.
 0. As a user interested in different countries, I expect to see information on the countries.
 0. As a person interested in hiring a photographer, I expect to find an easy way to contact the photographer.
