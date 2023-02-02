@@ -247,14 +247,19 @@ nav a:hover {
     width: max-content;
     margin-top: 2.5rem;
     text-align:left;
-    background-color: transparent;
-    color: yellow;
 	transform: translateX(100%);
 	animation-name: hero-scroll;
     animation-delay: -30ms; 
     animation-timing-function:  linear;
     animation-iteration-count: 2;
-    animation-duration:24s;
+    animation-duration:38s;
+}
+
+#hero-banner>h2 {
+    background-color: transparent;
+    color: yellow;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black;    
 }
 
 /* about section styling */
