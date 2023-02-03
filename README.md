@@ -121,11 +121,12 @@ The school founders are a group of indigenous and mestizaje friends who met at u
     - [Contact](#contact)
 </details>
 
-----
+
 
 # UX
 ## Goals
 ### Visitor Goals
+
 The target audience for LatAm Lingo are:
 - People who want to learn Mapudungun or Quechua.
 - People who want to understand Latin American indiginous cultures.
@@ -162,6 +163,7 @@ Thus the a summary of business goals would be:
 - Gain interest of potential clients and investors, and connect with social media.
 
 ### User Stories
+
 1. As a user interested in indigenous culture I expect to find meaningful information.
 0. I expect the qualifications first and foremost.
 0. As a user interested in language, I expect to see:
