@@ -202,4 +202,4 @@ Color base was chosen from a deep purple on in hero image using eyedropper.org. 
 ![Color contrast grid](./readme_images/color_contrast_grid.png)
 
 ### Images
-- The images are a mixure of places, personalities and events chosen to evoke feelings of engagement, curiosity and adventure about native Latin America. All made more accessible with knowledge of the indigenous languages and cultures.
+- The images are a mixure of places, personalities and events chosen to evoke feelings of engagement, curiosity and adventure about native Latin America. All made more accessible with knowledge of the indigenous languages and cultures. 
