@@ -463,6 +463,11 @@ footer {
         padding: .3rem 0 .05rem 0;
     }
 
+    #reg-pgm>.sec-hdr4 {
+        margin: 0 0 0 3rem;
+        padding: .2rem 0 .01rem 0;
+    }
+
     #register-btn-container{
         margin-top: 1rem;
         padding: 0.5rem;
