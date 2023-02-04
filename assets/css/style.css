@@ -12,6 +12,7 @@
     --text-odd-color: #0F0C30;
     --text-even-color: #f1f0fb;
     --hdr-ftr-height: 4rem;
+    --page-padding-1190: 4rem;
     --left-align: .5em;
 }
 
@@ -446,6 +447,10 @@ footer {
     nav a {
         opacity: 1;
         position: relative;
+    }
+
+    .page-odd {
+        padding: .5rem var(--page-padding-1190);
     }
 }
 
