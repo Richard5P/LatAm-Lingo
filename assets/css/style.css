@@ -463,6 +463,11 @@ footer {
         padding: .3rem 0 .05rem 0;
     }
 
+    #reg-pgm>.sec-hdr3 {
+        margin: .25rem 0 .05rem 5rem;
+        padding: .75rem 0 .1rem 0;
+    }    
+
     #reg-pgm>.sec-hdr4 {
         margin: 0 0 0 3rem;
         padding: .2rem 0 .01rem 0;
