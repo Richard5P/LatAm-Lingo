@@ -180,7 +180,7 @@ nav a:hover {
 /* body styling  */
 
 .page {
-    min-height: 80vh;
+    min-height: 90vh;
     padding: 0;
     margin: 0;
 }
@@ -450,7 +450,7 @@ footer {
 }
 
 @media screen and (min-width: 618px) {
-    /* apply to displays 1190px and larger */
+    /* apply to displays 618px and larger */
 
     .sec-hdr3 {
         margin: .75rem 0 .05rem 4.5rem;
