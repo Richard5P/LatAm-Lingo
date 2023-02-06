@@ -53,6 +53,10 @@ p {
     padding-left: 1rem;
 }
 
+table {
+    max-width: fit-content;
+}
+
 /* Section, tag, id and class styling */
 
 /* Header styling  */
@@ -271,7 +275,7 @@ nav a:hover {
 
 #culture-table {
     margin-top: 0;
-    border-spacing: 0.5rem 1.5rem;
+    border-spacing: 0.5rem .75rem;
 }
 
 /* table header for accessibility only */
@@ -294,12 +298,10 @@ nav a:hover {
     line-height: 0;
     column-count: 3;
     column-gap: 0;
-    overflow: hidden;
 }
 
 #photos>img {
     width: 100%;
-    overflow: hidden;
 }
 
 /* register section styling */
