@@ -217,15 +217,15 @@
                         <table id="grp-cls-tbl">
                             <caption>Group Class Selections</caption>
                             <tr>
-                                <th>Program</th>
-                                <th>Start Month</th>
-                                <th>AM / PM</th>
+                                <th id="th-program">Program</th>
+                                <th id="th-start-month">Start Month</th>
+                                <th id="th-am-pm">AM / PM</th>
                             </tr>
                             <!-- Note: the number of rows are fixed -->
                             <tr>
                                 <td>
                                     <!-- id and name should use an array instead of unique values-->
-                                    <select id="class-subject-1" name="db_subject-1">
+                                    <select id="class-subject-1" name="db_subject-1" aria-labelledby="th-program">
                                         <optgroup label="Languages">
                                             <option value="MAA1-2">Mapudungun A1-2</option>
                                             <option value="MAB1-2">Mapudungun B1-2</option>
@@ -241,10 +241,10 @@
                                     </select>
                                 <td>
                                     <input type="month" id="start-month-1" name="db_month-1" min="2023-01"
-                                        max="2024-01">
+                                        max="2024-01" aria-labelledby="th-start-month">
                                 </td>
                                 <td>
-                                    <select id="am-pm-1" name="db_time-1">
+                                    <select id="am-pm-1" name="db_time-1" aria-labelledby="th-am-pm">
                                         <option selected>am</option>
                                         <option>pm</option>
                                     </select>
@@ -253,7 +253,7 @@
 
                             <tr>
                                 <td>
-                                    <select id="class-subject-2" name="db_subject-2">
+                                    <select id="class-subject-2" name="db_subject-2" aria-labelledby="th-program">
                                         <optgroup label="Languages">
                                             <option value="MAA1-2">Mapudungun A1-2</option>
                                             <option value="MAB1-2">Mapudungun B1-2</option>
@@ -269,10 +269,10 @@
                                     </select>
                                 <td>
                                     <input type="month" id="start-month-2" name="db_month-2" min="2023-01"
-                                        max="2024-01">
+                                        max="2024-01" aria-labelledby="th-start-month">
                                 </td>
                                 <td>
-                                    <select id="am-pm-2" name="db_time-2">
+                                    <select id="am-pm-2" name="db_time-2" aria-labelledby="th-am-pm">
                                         <option selected>am</option>
                                         <option>pm</option>
                                     </select>
