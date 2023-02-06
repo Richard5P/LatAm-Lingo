@@ -555,6 +555,42 @@ footer {
     padding: .5em;
 }
 
+/* 404 page styling  */
+
+#ll-404-page {
+    background-color: var(--page-odd-back-color);
+    color:var(--text-color);
+    font-family: 'Merriweather', serif;
+    background-image: url(../images/hero.jpg);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#ll-404-msg {
+    color:var(--text-odd-color);
+    width:max-content;
+    height: max-content;
+    padding: 2rem;
+}
+
+#ll-404-msg>h1{
+    margin: 5.5rem 0 0 0;
+    padding-top: 4rem;
+    text-align: center;
+    background-color: transparent;
+    font-size: 2em;
+}
+
+#ll-404-msg>a {
+    border-style: none;
+    text-align: center;
+    background-color: transparent;
+    font-size: 2.5em;
+}
+
 #submit-msg>button>a {
     text-decoration: none;
     font-size: 1.5rem;
