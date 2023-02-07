@@ -539,11 +539,12 @@ footer {
     background-color: var(--background-color);
     color:var(--text-color);
     font-family: 'Merriweather', serif;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
 }
 
 #submit-msg {
-    width:max-content;
-    height: max-content;
     padding: 2rem;
 }
 
@@ -551,6 +552,7 @@ footer {
 #submit-msg>button {
     border: .2em solid var(--hdr-ftr-color);
     background-color: var(--hdr-ftr-back-color);
+    color:  var(--hdr-ftr-color);
     border-radius: 25%;
     padding: .5em;
 }
