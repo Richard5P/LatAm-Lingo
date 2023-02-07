@@ -251,20 +251,20 @@ nav a:hover {
     height: 2rem;
     width: max-content;
     margin-top: 2.5rem;
-    text-align:left;
-	transform: translateX(100%);
-	animation-name: hero-scroll;
-    animation-delay: -30ms; 
-    animation-timing-function:  linear;
+    text-align: left;
+    transform: translateX(100%);
+    animation-name: hero-scroll;
+    animation-delay: -30ms;
+    animation-timing-function: linear;
     animation-iteration-count: 2;
-    animation-duration:38s;
+    animation-duration: 38s;
 }
 
 #hero-banner>h2 {
     background-color: transparent;
     color: yellow;
     font-size: 2.5em;
-    text-shadow: 1px 1px 2px black;    
+    text-shadow: 1px 1px 2px black;
 }
 
 /* about section styling */
@@ -317,7 +317,8 @@ nav a:hover {
 }
 
 #grp-cls-tbl {
-    border-spacing: 1em 0;
+    max-width: fit-content;
+    border-spacing: .01em 0;
 }
 
 #grp-cls-tbl>tr {
@@ -338,7 +339,7 @@ nav a:hover {
     margin-left: .5rem;
 }
 
-#register-btn-container{
+#register-btn-container {
     display: flex;
     justify-content: center;
     margin-top: 0.5rem;
@@ -470,14 +471,18 @@ footer {
     #reg-pgm>.sec-hdr3 {
         margin: .25rem 0 .05rem 5rem;
         padding: .75rem 0 .1rem 0;
-    }    
+    }
 
     #reg-pgm>.sec-hdr4 {
         margin: 0 0 0 3rem;
         padding: .2rem 0 .01rem 0;
     }
 
-    #register-btn-container{
+    #grp-cls-tbl {
+        border-spacing: .1em 0;
+    }
+
+    #register-btn-container {
         margin-top: 1rem;
         padding: 0.5rem;
     }
@@ -498,14 +503,15 @@ footer {
 }
 
 @media screen and (max-width: 430px) {
+
     /* apply to very small screens, less than 430px to make room for submit button */
-    #grp-cls-tbl>tbody>tr>th:last-child{
-        font-size:.8em;
-    }
+ /*   #grp-cls-tbl>tbody>tr>th:last-child {
+        font-size: .8em;
+    } */
 
     body {
-        font-size: 1rem;
-    } 
+        font-size: .85em;
+    }
 
     fieldset {
         padding-bottom: 0;
@@ -515,29 +521,30 @@ footer {
         margin: .5rem 0 .05rem 3.5rem;
         padding: .25rem 0 .1rem 0;
     }
-    
+
     .sec-hdr4 {
         margin: .2rem 0 .05rem 2rem;
         padding: .1rem 0 .05rem 0;
     }
 }
-    
+
 /* scrolling text animation */
 
 @keyframes hero-scroll {
-	0% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* submit_ok page styling */
 
 #submit-page {
     background-color: var(--background-color);
-    color:var(--text-color);
+    color: var(--text-color);
     font-family: 'Merriweather', serif;
     width: 100vw;
     height: 100vh;
@@ -552,7 +559,7 @@ footer {
 #submit-msg>button {
     border: .2em solid var(--hdr-ftr-color);
     background-color: var(--hdr-ftr-back-color);
-    color:  var(--hdr-ftr-color);
+    color: var(--hdr-ftr-color);
     border-radius: 25%;
     padding: .5em;
 }
@@ -565,7 +572,7 @@ footer {
     height: 100vh;
     width: 100vw;
     background-color: var(--page-odd-back-color);
-    color:var(--text-odd-color);
+    color: var(--text-odd-color);
     text-shadow: 2px 2px 3px #faf9e3;
     font-family: 'Merriweather', serif;
     background-image: url(../images/globe-sa-404.png);
@@ -577,7 +584,7 @@ footer {
     text-align: center;
 }
 
-#ll-404-page>h1{
+#ll-404-page>h1 {
     margin-top: 1rem;
     padding-top: 30vh;
     background-color: transparent;
@@ -585,15 +592,15 @@ footer {
     font-weight: bolder;
 }
 
-#ll-404-page>h2{
-    font-size:1.75em;
+#ll-404-page>h2 {
+    font-size: 1.75em;
     font-weight: bolder;
 }
 
 #ll-404-msg>button {
     border: .2em solid #faf9e3;
     background-color: transparent;
-    color:  var(--hdr-ftr-color);
+    color: var(--hdr-ftr-color);
     border-radius: 25%;
     padding: .5em;
 }
