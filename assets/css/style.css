@@ -612,6 +612,8 @@ footer {
         border: .2em solid #faf9e3;
         background-color: transparent;
         color: var(--hdr-ftr-color);
+        font-size: 2em;
+        font-weight: bolder;
         border-radius: 25%;
         padding: .5em;
     }
