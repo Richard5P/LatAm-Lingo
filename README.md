@@ -247,14 +247,14 @@ This section contains all the content about the school and the programs. It is m
 - Sales contact information
 
 The section is structured with subsections 
-![About LatAm Lingo screenshot]()
+![About LatAm Lingo screenshot](./assets/images/readme_images/about-page.jpg)
 
 ### Gallery
-This section is purely for show and potentially provide a little extra enticement about new experiences that might be made possible with the language training.  To be honest, I don't think the gallery will significantly increase initial registration but may play a factor in avoiding buyers' remorse and gaining some general brand awareness.
+- This section is purely for show and potentially provide a little extra enticement about new experiences that might be made possible with the language training.  To be honest, I don't think the gallery will significantly increase initial registration but may play a factor in avoiding buyers' remorse and gaining some general brand awareness.
 ![Gallery screenshot](./assets/images/readme_images/gallery-page.jpg)
 
 ### Register
-This page is a one-stop section for user registration with LatAm Lingo. There are three levels of interest that a user could register:
+- This page is a one-stop section for user registration with LatAm Lingo. There are three levels of interest that a user could register:
 1. Add me to your mailing list. 
 --Users who are interested in the school but not enrolling in any program currently can register their contact information and receive future emails.
 --Users who enroll in a program are automatically added to the mailing list.
@@ -278,47 +278,50 @@ This site was developed with a limited set of technologies; html and CSS. In add
 - Include a Spanish version of the site to attract more Latin American users
 
 ### Technical - These are UI improvements that could be gained from incorporating other technologies.
+
 - Field selection from a larger and changing set of values. Benifits would be more effective multi-choice scrollable selections (as from a database)
 - Multi-selection functionality using arrays
 
-##Technologies Used
+
+## Technologies Used
 
 - Coding languages
     - html
     - css
-
+    - Used type selectors instead of classes (before realising class is a higher level)
 - Development environment
     - github
     - gitpod
     - MS Visual Studio
     
 ## Testing
-Testing was done througout the development process with increasing number and specificity as the project progressed. 
+
+- Testing was done througout the development process with increasing number and specificity as the project progressed. 
     1. Initial and frequent W3C html validation was done. 
     2. Validation rules were developed and documented as the fields were included.
     3. Once all the website features had all been included I designed a testing checklist which I completed periodically.
-    4. The testing components and [final results have been documented here][results]
-    [results]:./assets/docs/testing/test-results
+    4. The testing components and [final results have been documented here](./assets/docs/testing/test-results.md)
+
 
 ## Unfixed Bugs
 - As noted in the testing document, the user is not returned to the same hero position when navigating to it from other sections. This was left as it did not significantly impact the user experience and, in the interest of delivery deadline, could be addressed in the next release.
 - The original design included a checkbox for multiple group class selection.  This really needed a database and arrays so the current implementation has two rows, each with it's own id.
 
-##Deployment
-## Github Deployment
+## Deployment
+### Github Deployment
 **Requirements:**
 - A free GitHub account.
 
 ### Github Instructions
 1. Log in to your GitHub account.
-navigate to [https://github.com/Richard5P/LatAm-Lingo](https://github.com/Richard5P/LatAm-Lingo).
-1. You can set up your own repository and copy or clone it, or you fork the repository.
-2. `git add`, `git commit` and `git push` to a GitHub repository, if necessary.
-3. GitHub pages will update from the master branch by default.
-4. Go to the **Settings** page of the repository.
-5. Scroll down to the **Github Pages** section.
-7. Select the Master Branch as the source and **Confirm** the selection.
-8. Wait a minute or two and it should be live for viewing. See my own [here](https://richard5p.github.io/LatAm-Lingo/).
+2. navigate to [https://github.com/Richard5P/LatAm-Lingo](https://github.com/Richard5P/LatAm-Lingo).
+3. You can set up your own repository and copy or clone it, or you fork the repository.
+4. `git add`, `git commit` and `git push` to a GitHub repository, if necessary.
+5. GitHub pages will update from the master branch by default.
+6. Go to the **Settings** page of the repository.
+7. Scroll down to the **Github Pages** section.
+8. Select the Master Branch as the source and **Confirm** the selection.
+9. Wait a minute or two and it should be live for viewing. See my own [here](https://richard5p.github.io/LatAm-Lingo/).
 
 ## Credits and Contact
 ### Content
@@ -327,7 +330,7 @@ navigate to [https://github.com/Richard5P/LatAm-Lingo](https://github.com/Richar
 - StackOverflow
 
 Any code utilised from a site is documented and credited within the code.
-No credit is required for the other media.
+No credit is required for the other media other than provided by source.
 
 ### Contact
 Please feel free to contact me at `richard.deutsch@gmail.com`
