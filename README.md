@@ -199,7 +199,35 @@ Color base was chosen from a deep purple on in hero image using eyedropper.org. 
 - #F1F0FB (very light purple) - background odd
 - #FFFF00 (yellow) - text on hero with black shadow effect to add contrast
 
-![Color contrast grid](./readme_images/color_contrast_grid.png)
+![Color contrast grid](./assets/docs/design/color_contrast_grid.png)
 
 ### Images
 - The images are a mixure of places, personalities and events chosen to evoke feelings of engagement, curiosity and adventure about native Latin America. All made more accessible with knowledge of the indigenous languages and cultures. 
+
+![Sample of pictures in Gallery](./assets/images/readme_images/pictures.jpg)
+
+### Styling
+The overall approach that I took to styling was clarity and consistancy. This included:
+- Limited set of fonts and colors
+-- High contrast on alternating pages
+-- Distinct header and footer color schemes
+-- Consistent use of page element styling
+
+This approach carries over to the coding where the styling is organised for use.
+
+# Features
+## Scrollable single page
+This site presents the user with a single page allowing giving them the option of:
+- Scrolling through the site
+- Navigating directly to a content section
+
+## Navigation Bar
+This feature appears on all pages for consistency and ease of use.
+- The navbar is fixed so it is visible no matter how far you scroll.
+- The logo provides a link back to the home page at all times
+- The Navbar is simple and provides clear access to the primary user goals and site features; Home, About, Gallery, Registration
+-- This feature allows the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+- On smaller devices the menu collapses to a drop down "hamburger"
+-- Note: I decided to leave the "hamburger" open/close feature to be user enabled as I found it useful for switching between the registration and about when deciding on a selecting a class. Future design would include more choices and information on the registration screen.
+
+## Footer
