@@ -41,10 +41,11 @@ The school founders are a group of indigenous and mestizaje friends who met at u
     <li><details>
     <summary><a href="#page-elements">Page Elements</a></summary>
 
-    - [All Pages](#all-pages)
-    - [Index Page](#index-page)
+    - [Header](#header)
+    - [Footer](#footer)
+    - [About Page](#about-page)
     - [Gallery Page](#gallery-page)
-    - [Contact Page](#contact-page)
+    - [Register Page](#contact-page)
     </details></li>
 
     <li><details>
@@ -218,12 +219,20 @@ The overall approach that I took to styling was clarity and consistancy. This in
 This approach carries over to the coding where the styling is organised for use.
 
 # Features
-## Scrollable single page
+## Page Elements
+### Scrollable single page site
 This site presents the user with a single page allowing giving them the option of:
 - Scrolling through the site
 - Navigating directly to a content section
 
-## Navigation Bar
+### Landing Page
+The Landing Page contains a large welcoming image of two native women in a school setting. The image, along with the accompanying text is meant to provide the user with immediate reasuring confirmation of LatAm Lingo's function and tone.
+
+The image leaves room at the bottom of the page to show the top of the next section so that the user is encouraged to scroll down. In addition, the scrolling banner highlights some of the attributes of the program and ends with an down arrow to further indicate that there's more information below.
+
+![Landing Page](./assets/images/readme_images/home-page.jpg)
+
+### Navigation Bar
 This feature appears on all pages for consistency and ease of use.
 - The navbar is fixed so it is visible no matter how far you scroll.
 - The logo provides a link back to the home page at all times
@@ -233,11 +242,15 @@ This feature appears on all pages for consistency and ease of use.
 -- Note: I decided to leave the "hamburger" open/close feature to be user enabled as I found it useful for switching between the registration and about when deciding on a selecting a class. Future design would include more choices and information on the registration screen.
 
 ![NavBar Desktop](./assets/images/readme_images/navbar-lg.png) 
+
 ![NavBar Hamburger Closed](./assets/images/readme_images/navbar-sm-closed.png) ![NavBar Hamburger Open](./assets/images/readme_images/navbar-sm-open.png)
 
-## Footer
+### Footer
 The footer contains links to social media platforms where LatAm Lingo has a presence, as well as the obligatory copyright. The particular social media sites shown were selected based on market research. 
 
 In contrast to the header, the footer floats at the bottom of the website (the bottom of the html page). This is for two reasons:
-1. The information provided is not essential to the user immediate needs
+1. The information provided is not essential to the user immediate goals
 2. The space is better utilized, particularly on smaller viewports, for functional content
+
+![Footer](./assets/images/readme_images/footer.png)
+
