@@ -232,6 +232,9 @@ This feature appears on all pages for consistency and ease of use.
 - On smaller devices the menu collapses to a drop down "hamburger"
 -- Note: I decided to leave the "hamburger" open/close feature to be user enabled as I found it useful for switching between the registration and about when deciding on a selecting a class. Future design would include more choices and information on the registration screen.
 
+![NavBar Desktop](./assets/images/readme_images/navbar-lg.png) 
+![NavBar Hamburger Closed](./assets/images/readme_images/navbar-sm-closed.png) ![NavBar Hamburger Open](./assets/images/readme_images/navbar-sm-open.png)
+
 ## Footer
 The footer contains links to social media platforms where LatAm Lingo has a presence, as well as the obligatory copyright. The particular social media sites shown were selected based on market research. 
 
