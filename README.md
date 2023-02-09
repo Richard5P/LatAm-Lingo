@@ -5,6 +5,8 @@ LatAm Lingo is school of Latin American indigenous languages and cultures which 
 
 The school founders are a group of indigenous and mestizaje friends who met at university and shared the same dismay about how little their classmates (and society in general) knew about the LatAm indigenous population. Beyond the professional desire for a profitable business is their societal goal of education and awareness about their native heritage. The government and NGO heritage organisations partially fund the start-up.
 
+![LatAm Lingo website on desktop and mobile device screens](./assets/images/readme_images/am_i_responsive.png)
+
 #Table of Contents
 
 1. <details open>
@@ -231,3 +233,8 @@ This feature appears on all pages for consistency and ease of use.
 -- Note: I decided to leave the "hamburger" open/close feature to be user enabled as I found it useful for switching between the registration and about when deciding on a selecting a class. Future design would include more choices and information on the registration screen.
 
 ## Footer
+The footer contains links to social media platforms where LatAm Lingo has a presence, as well as the obligatory copyright. The particular social media sites shown were selected based on market research. 
+
+In contrast to the header, the footer floats at the bottom of the website (the bottom of the html page). This is for two reasons:
+1. The information provided is not essential to the user immediate needs
+2. The space is better utilized, particularly on smaller viewports, for functional content
